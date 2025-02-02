@@ -1,0 +1,10 @@
+# Relationsal Databases
+
+## Boilerplate
+
+In this 170-lesson course, you will learn terminal commands by creating a website boilerplate using only the command line.
+
+This course runs in a virtual Linux machine using Gitpod. Alternatively, download Postgres and Microsoft VS Code with these extensions: PostgreSQL by Microsoft, Rainbow CSV.
+
+1. __The first thing you need to do is start the terminal.__ Do that by clicking the "hamburger" menu at the top left of the screen, going to the "terminal" section, and clicking "new terminal". Or start the terminal locally. Once you open a new one, type echo hello terminal into the terminal and press enter.
+
