@@ -31,8 +31,9 @@ This course runs in a virtual Linux machine using Gitpod. Alternatively, downloa
 	```
 
 4. In Gitpod, the output is showing everything in this folder. There's one folder in there. You can use `cd <folder_name>` to go into a folder. `cd` stands for __change directory__. In Gitpod, change to the `freeCodeCamp` directory. I'll stay wher I am since I only have a README file.
-	> [!TIP]
-	> `Tab`will complete the folder name.
+	
+> [!TIP]
+> `Tab`will complete the folder name.
 
 
 5. You are in the `freecodecamp` folder now. You may have noticed that the prompt changed to include it. Print the working directory of the `freeCodeCamp` folder to see the full path of where you are. I didn't go anywhere, so my output is the same.
