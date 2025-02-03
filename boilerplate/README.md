@@ -99,9 +99,11 @@ camper: /test$ cd ..
 camper: /freeCodeCamp$ 
 ```
 
-11. 
+11. `test` got removed from the prompt since you left that folder and you're back in the `freeCodeCamp` folder. List the contents of what's here to remind yourself
 
 ```
+camper: /freeCodeCamp$ ls
+node_modules  package.json  package-lock.json  reset.sh  setup.sh  test
 ```
 
 12. 
