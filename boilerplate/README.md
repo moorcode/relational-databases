@@ -389,3 +389,39 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 camper: /src$ cd ..
 camper: /has$ 
 ```
+
+30. You're getting pretty good. Change back to the `node_modules` directory.
+
+31. You can go back two folders with `cd ../..`. Each set of dots represents another folder level. Go back to the `project` directory from the `node_modules` directory.
+
+```
+camper: /node_modules$ cd ../..
+camper: /project$ 
+```
+
+32. You are back in the `project` folder where you started. List what's in here again.
+
+```
+camper: /project$ ls
+freeCodeCamp
+```
+
+33. 
+
+```
+```
+
+34. 
+
+```
+```
+
+35. 
+
+```
+```
+
+36. 
+
+```
+```
