@@ -372,9 +372,15 @@ camper: /src$ ls
 index.js
 ```
 
-28. 
+28. Only one file here. Show me what's in it with `more`.
 
 ```
+camper: /src$ more index.js 
+'use strict';
+
+var bind = require('function-bind');
+
+module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 ```
 
 29. 
