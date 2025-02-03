@@ -145,19 +145,147 @@ camper: /freeCodeCamp$ cd node_modules/
 camper: /node_modules$ 
 ```
 
-16. 
+16. Now the prompt includes `node_modules` since that's where you are. List what's in the folder.
 
 ```
+camper: /node_modules$ ls
+ansi-colors           es-to-primitive          is-regex                          readdirp
+ansi-regex            fill-range               is-symbol                         require-directory
+ansi-styles           find-up                  js-yaml                           require-main-filename
+anymatch              flat                     locate-path                       semver
+argparse              fs.realpath              lodash                            set-blocking
+balanced-match        function-bind            log-symbols                       shell-quote
+binary-extensions     get-caller-file          minimatch                         sprintf-js
+brace-expansion       glob                     minimist                          string.prototype.trimend
+braces                glob-parent              mkdirp                            string.prototype.trimstart
+browser-stdout        growl                    mocha                             string-width
+camelcase             has                      mocha-tap-reporter                strip-ansi
+chalk                 has-flag                 ms                                strip-json-comments
+chokidar              has-symbols              node-environment-flags            supports-color
+cliui                 he                       normalize-path                    to-regex-range
+color-convert         inflight                 object.assign                     which
+color-name            inherits                 object.getownpropertydescriptors  which-module
+concat-map            is-binary-path           object-inspect                    wide-align
+debug                 is-buffer                object-keys                       wrap-ansi
+decamelize            is-callable              once                              wrappy
+define-properties     is-date-object           path-exists                       y18n
+diff                  isexe                    path-is-absolute                  yargs
+emoji-regex           is-extglob               picomatch                         yargs-parser
+es-abstract           is-fullwidth-code-point  p-limit                           yargs-unparser
+escape-string-regexp  is-glob                  p-locate
+esprima               is-number                p-try
 ```
 
-17. 
+17. That's a lot of folders. You can add a __flag__ to a command to use it different ways like this: `ls <flag>`. List the contents of the `node_modules` folder in _long list format_. Do that by adding the `-l` flag to the _list_ command.
 
 ```
+camper: /node_modules$ ls -l
+total 80
+drwxr-xr-x  3 gitpod gitpod   105 Feb  3 08:43 ansi-colors
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 ansi-regex
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 ansi-styles
+drwxr-xr-x  2 gitpod gitpod    92 Feb  3 08:43 anymatch
+drwxr-xr-x  3 gitpod gitpod   105 Feb  3 08:43 argparse
+drwxr-xr-x  2 gitpod gitpod    95 Feb  3 08:43 balanced-match
+drwxr-xr-x  2 gitpod gitpod   157 Feb  3 08:43 binary-extensions
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 brace-expansion
+drwxr-xr-x  3 gitpod gitpod   105 Feb  3 08:43 braces
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 browser-stdout
+drwxr-xr-x  2 gitpod gitpod    92 Feb  3 08:43 camelcase
+drwxr-xr-x  4 gitpod gitpod   148 Feb  3 08:43 chalk
+drwxr-xr-x  4 gitpod gitpod    98 Feb  3 08:43 chokidar
+drwxr-xr-x  3 gitpod gitpod   118 Feb  3 08:43 cliui
+drwxr-xr-x  2 gitpod gitpod   132 Feb  3 08:43 color-convert
+drwxr-xr-x  2 gitpod gitpod   129 Feb  3 08:43 color-name
+drwxr-xr-x  4 gitpod gitpod   126 Feb  3 08:43 concat-map
+drwxr-xr-x  4 gitpod gitpod   116 Feb  3 08:43 debug
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 decamelize
+drwxr-xr-x  3 gitpod gitpod   181 Feb  3 08:43 define-properties
+drwxr-xr-x  4 gitpod gitpod   163 Feb  3 08:43 diff
+drwxr-xr-x  3 gitpod gitpod   129 Feb  3 08:43 emoji-regex
+drwxr-xr-x 12 gitpod gitpod  4096 Feb  3 08:43 es-abstract
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 escape-string-regexp
+drwxr-xr-x  4 gitpod gitpod   102 Feb  3 08:43 esprima
+drwxr-xr-x  5 gitpod gitpod  4096 Feb  3 08:43 es-to-primitive
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 fill-range
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 find-up
+drwxr-xr-x  3 gitpod gitpod   119 Feb  3 08:43 flat
+drwxr-xr-x  2 gitpod gitpod    88 Feb  3 08:43 fs.realpath
+drwxr-xr-x  3 gitpod gitpod  4096 Feb  3 08:43 function-bind
+drwxr-xr-x  2 gitpod gitpod   115 Feb  3 08:43 get-caller-file
+drwxr-xr-x  2 gitpod gitpod   125 Feb  3 08:43 glob
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 glob-parent
+drwxr-xr-x  3 gitpod gitpod   155 Feb  3 08:43 growl
+drwxr-xr-x  4 gitpod gitpod    85 Feb  3 08:43 has
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 has-flag
+drwxr-xr-x  4 gitpod gitpod   173 Feb  3 08:43 has-symbols
+drwxr-xr-x  4 gitpod gitpod   101 Feb  3 08:43 he
+drwxr-xr-x  2 gitpod gitpod    77 Feb  3 08:43 inflight
+drwxr-xr-x  2 gitpod gitpod   104 Feb  3 08:43 inherits
+drwxr-xr-x  2 gitpod gitpod    92 Feb  3 08:43 is-binary-path
+drwxr-xr-x  2 gitpod gitpod    92 Feb  3 08:43 is-buffer
+drwxr-xr-x  4 gitpod gitpod  4096 Feb  3 08:43 is-callable
+drwxr-xr-x  4 gitpod gitpod   175 Feb  3 08:43 is-date-object
+drwxr-xr-x  3 gitpod gitpod   137 Feb  3 08:43 isexe
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 is-extglob
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 is-fullwidth-code-point
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 is-glob
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 is-number
+drwxr-xr-x  4 gitpod gitpod   178 Feb  3 08:43 is-regex
+drwxr-xr-x  4 gitpod gitpod  4096 Feb  3 08:43 is-symbol
+drwxr-xr-x  5 gitpod gitpod   128 Feb  3 08:43 js-yaml
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 locate-path
+drwxr-xr-x  3 gitpod gitpod 20480 Feb  3 08:43 lodash
+drwxr-xr-x  2 gitpod gitpod   110 Feb  3 08:43 log-symbols
+drwxr-xr-x  2 gitpod gitpod    78 Feb  3 08:43 minimatch
+drwxr-xr-x  4 gitpod gitpod   126 Feb  3 08:43 minimist
+drwxr-xr-x  3 gitpod gitpod    91 Feb  3 08:43 mkdirp
+drwxr-xr-x  5 gitpod gitpod   187 Feb  3 08:43 mocha
+drwxr-xr-x  3 gitpod gitpod    70 Feb  3 08:43 mocha-tap-reporter
+drwxr-xr-x  2 gitpod gitpod    77 Feb  3 08:43 ms
+drwxr-xr-x  2 gitpod gitpod   151 Feb  3 08:43 node-environment-flags
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 normalize-path
+drwxr-xr-x  4 gitpod gitpod  4096 Feb  3 08:43 object.assign
+drwxr-xr-x  4 gitpod gitpod  4096 Feb  3 08:43 object.getownpropertydescriptors
+drwxr-xr-x  5 gitpod gitpod  4096 Feb  3 08:43 object-inspect
+drwxr-xr-x  3 gitpod gitpod  4096 Feb  3 08:43 object-keys
+drwxr-xr-x  2 gitpod gitpod    73 Feb  3 08:43 once
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 path-exists
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 path-is-absolute
+drwxr-xr-x  3 gitpod gitpod   105 Feb  3 08:43 picomatch
+drwxr-xr-x  2 gitpod gitpod    92 Feb  3 08:43 p-limit
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 p-locate
+drwxr-xr-x  2 gitpod gitpod    92 Feb  3 08:43 p-try
+drwxr-xr-x  2 gitpod gitpod    92 Feb  3 08:43 readdirp
+drwxr-xr-x  2 gitpod gitpod   134 Feb  3 08:43 require-directory
+drwxr-xr-x  2 gitpod gitpod    98 Feb  3 08:43 require-main-filename
+drwxr-xr-x  3 gitpod gitpod   123 Feb  3 08:43 semver
+drwxr-xr-x  2 gitpod gitpod    98 Feb  3 08:43 set-blocking
+drwxr-xr-x  4 gitpod gitpod   146 Feb  3 08:43 shell-quote
+drwxr-xr-x  6 gitpod gitpod   161 Feb  3 08:43 sprintf-js
+drwxr-xr-x  4 gitpod gitpod  4096 Feb  3 08:43 string.prototype.trimend
+drwxr-xr-x  4 gitpod gitpod  4096 Feb  3 08:43 string.prototype.trimstart
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 string-width
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 strip-ansi
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 strip-json-comments
+drwxr-xr-x  2 gitpod gitpod    92 Feb  3 08:43 supports-color
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 to-regex-range
+drwxr-xr-x  3 gitpod gitpod   105 Feb  3 08:43 which
+drwxr-xr-x  2 gitpod gitpod    94 Feb  3 08:43 which-module
+drwxr-xr-x  2 gitpod gitpod    74 Feb  3 08:43 wide-align
+drwxr-xr-x  3 gitpod gitpod    94 Feb  3 08:43 wrap-ansi
+drwxr-xr-x  2 gitpod gitpod    75 Feb  3 08:43 wrappy
+drwxr-xr-x  2 gitpod gitpod    94 Feb  3 08:43 y18n
+drwxr-xr-x  5 gitpod gitpod   156 Feb  3 08:43 yargs
+drwxr-xr-x  3 gitpod gitpod   109 Feb  3 08:43 yargs-parser
+drwxr-xr-x  2 gitpod gitpod    94 Feb  3 08:43 yargs-unparser
 ```
 
-18. 
+18. It is showing more details about each item in here and it's a little easier to read. One of the folders is named `has`, why don't you change into it.
 
 ```
+camper: /node_modules$ cd has
+camper: /has$ 
 ```
 
 19. 
