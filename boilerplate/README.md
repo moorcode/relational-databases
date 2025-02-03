@@ -406,14 +406,13 @@ camper: /project$ ls
 freeCodeCamp
 ```
 
-33. 
+33. That's right. Why don't you get a fresh start by clearing the terminal.
+
+34. You will be making a __website boilerplate__. You can make a new folder with `mkdir <folder_name>`. `mkdir` stands for _make directory_. Make a `website` directory in this `project` folder. Remember that directory and folder mean the same thing.
 
 ```
-```
-
-34. 
-
-```
+camper: /project$ mkdir website
+camper: /project$ 
 ```
 
 35. 
