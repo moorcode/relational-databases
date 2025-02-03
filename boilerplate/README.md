@@ -365,9 +365,11 @@ camper: /src$ pwd
 /workspace/project/freeCodeCamp/node_modules/has/src
 ```
 
-27. 
+27. Getting deeper still. You can see that each new folder has a `/` in front of it. Take a look at what's in this folder.
 
 ```
+camper: /src$ ls
+index.js
 ```
 
 28. 
