@@ -383,7 +383,9 @@ var bind = require('function-bind');
 module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 ```
 
-29. 
+29. It's some JavaScript 😄 I think you've fooled around enough. Why don't you navigate out of here. Change back to the has directory.
 
 ```
+camper: /src$ cd ..
+camper: /has$ 
 ```
