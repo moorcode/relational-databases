@@ -15,9 +15,7 @@ hello terminal
 2. What you see in the terminal below is a folder (or directory) on this machine. Type `pwd` into the terminal and press enter to see the path of the folder. `pwd` stands for "print working directory".
 
 ```
-Path
-----
-C:\Users\moorcode
+/c/Users/moorcode/relational-databases/boilerplate
 ```
 
 3. 
