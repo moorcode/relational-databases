@@ -422,7 +422,45 @@ camper: /project$ ls
 freeCodeCamp  website
 ```
 
-36. 
+36. It worked. The website files will be in the new directory. Change to the `website` directory so you can start creating them.
+
+37. List the contents of this website folder.
+
+38. It's brand new, there's nothing in it yet. The `echo` command lets you print anything to the terminal. You used it in the first lesson. Just type what you want to print after it. Use it to print `hello website` to the terminal.
+
+39. Websites usually have an `index.html` file. You can use `touch <filename>` to create a new file. Create `index.html` in the `website` folder.
+
+```
+camper: /website$ touch index.html
+camper: /website$ 
+```
+
+40. 
+
+```
+```
+
+41. 
+
+```
+```
+
+42. 
+
+```
+```
+
+43. 
+
+```
+```
+
+44. 
+
+```
+```
+
+45. 
 
 ```
 ```
