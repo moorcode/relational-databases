@@ -352,12 +352,30 @@ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
 --More--(68%)
 ```
 
-23. 
+23. Pretend you read all that. It looks a little messy in here again so why don't you clear the terminal.
+
+24. Better. Remind yourself what's in here with the list command.
+
+25. Go into that `src` directory to see what you can find in there.
+
+26. View the full path of this folder.
+
+```
+camper: /src$ pwd
+/workspace/project/freeCodeCamp/node_modules/has/src
+```
+
+27. 
 
 ```
 ```
 
-24. 
+28. 
+
+```
+```
+
+29. 
 
 ```
 ```
