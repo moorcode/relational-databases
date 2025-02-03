@@ -129,10 +129,7 @@ camper: /freeCodeCamp$ more package.json
 --More--(99%)
 ```
 
-13. 
-
-```
-```
+13. It looks like a __JSON object__. You can empty the terminal with `clear`. The terminal looks a little cluttered, why don't you `clear` it.
 
 14. 
 
