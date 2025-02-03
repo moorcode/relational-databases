@@ -131,7 +131,9 @@ camper: /freeCodeCamp$ more package.json
 
 13. It looks like a __JSON object__. You can empty the terminal with `clear`. The terminal looks a little cluttered, why don't you `clear` it.
 
-14. 
+14. Now you have a fresh screen 😄 List what's in here again.
 
 ```
+camper: /freeCodeCamp$ ls
+node_modules  package.json  package-lock.json  reset.sh  setup.sh  test
 ```
