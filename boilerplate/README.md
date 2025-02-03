@@ -319,9 +319,11 @@ has({}, 'hasOwnProperty'); // false
 --More--(77%)
 ```
 
-21. 
+21. Nothing noteworthy in there. You can't see what's in the here anymore, list the contents again.
 
 ```
+camper: /has$ ls
+LICENSE-MIT  package.json  README.md  src  test
 ```
 
 22. 
