@@ -137,3 +137,30 @@ camper: /freeCodeCamp$ more package.json
 camper: /freeCodeCamp$ ls
 node_modules  package.json  package-lock.json  reset.sh  setup.sh  test
 ```
+
+15. You checked out the `test` folder and the `package.json` file. What next? Why don't you go into that `node_modules` directory.
+
+```
+camper: /freeCodeCamp$ cd node_modules/
+camper: /node_modules$ 
+```
+
+16. 
+
+```
+```
+
+17. 
+
+```
+```
+
+18. 
+
+```
+```
+
+19. 
+
+```
+```
