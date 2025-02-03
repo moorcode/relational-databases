@@ -106,9 +106,27 @@ camper: /freeCodeCamp$ ls
 node_modules  package.json  package-lock.json  reset.sh  setup.sh  test
 ```
 
-12. 
+12. There's the `test` folder you were just in. You can see what's in a file with `more <filename>`. Use it to view what's in the `package.json` file.
 
 ```
+camper: /freeCodeCamp$ more package.json 
+{
+  "name": "freecodecamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "programmatic-test": "mocha --config .mocharc.json",
+    "test": "mocha --config .mocharc.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^7.2.0",
+    "mocha-tap-reporter": "^0.1.3",
+    "shell-quote": "^1.7.2"
+  }
+--More--(99%)
 ```
 
 13. 
