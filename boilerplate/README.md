@@ -288,7 +288,53 @@ camper: /node_modules$ cd has
 camper: /has$ 
 ```
 
-19. 
+19. You are now in the has folder. List its contents.
+
+```
+camper: /has$ ls
+LICENSE-MIT  package.json  README.md  src  test
+```
+
+20. 
+There's a few files and folders here. Can you tell the difference? Take a look at more of that README.md file.
+
+```
+camper: /has$ more README.md 
+# has
+
+> Object.prototype.hasOwnProperty.call shortcut
+
+## Installation
+
+/```sh
+npm install --save has
+/```
+
+## Usage
+
+/```js
+var has = require('has');
+
+has({}, 'hasOwnProperty'); // false
+--More--(77%)
+```
+
+21. 
+
+```
+```
+
+22. 
+
+```
+```
+
+23. 
+
+```
+```
+
+24. 
 
 ```
 ```
