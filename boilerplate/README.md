@@ -415,9 +415,11 @@ camper: /project$ mkdir website
 camper: /project$ 
 ```
 
-35. 
+35. List what's here to make sure it got created.
 
 ```
+camper: /project$ ls
+freeCodeCamp  website
 ```
 
 36. 
