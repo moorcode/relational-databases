@@ -435,14 +435,14 @@ camper: /website$ touch index.html
 camper: /website$ 
 ```
 
-40. 
+40. They usually have a CSS file as well. Create styles.css in the website folder using the same method.
+
+
+41. List the contents of the website folder to make sure they got created.
 
 ```
-```
-
-41. 
-
-```
+camper: /website$ ls
+index.html  styles.css
 ```
 
 42. 
