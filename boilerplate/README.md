@@ -581,3 +581,39 @@ GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
 Full documentation <https://www.gnu.org/software/coreutils/ls>
 or available locally via: info '(coreutils) ls invocation'
 ```
+
+46. Scroll through the menu to see the flags that go with `ls`. The flag you are looking for is `--all`, or `-a` for short. List __all__ the contents of the `website` folder using the correct flag.
+
+```
+camper: /website$ ls -all
+total 0
+drwxr-xr-x 2 gitpod gitpod  76 Feb  3 09:28 .
+drwxrwxrwx 6 gitpod gitpod 105 Feb  3 09:23 ..
+-rw-r--r-- 1 gitpod gitpod   0 Feb  3 09:28 .gitignore
+-rw-r--r-- 1 gitpod gitpod   0 Feb  3 09:26 index.html
+-rw-r--r-- 1 gitpod gitpod   0 Feb  3 09:28 index.js
+-rw-r--r-- 1 gitpod gitpod   0 Feb  3 09:27 styles.css
+camper: /website$ ls -a
+.  ..  .gitignore  index.html  index.js  styles.css
+```
+
+47. 
+
+```
+```
+
+48. 
+
+```
+```
+
+49. 
+
+```
+```
+
+50. 
+
+```
+```
+
