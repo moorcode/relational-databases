@@ -445,19 +445,15 @@ camper: /website$ ls
 index.html  styles.css
 ```
 
-42. 
+42. There they are. Next is a JavaScript file. Create `index.js` in the `website` folder with the method you have been using.
+
+43. You might turn this into a __git repository__. Create `.gitignore` in the website folder with the same method.
+
+44. List the contents of the website folder to see your new files.
 
 ```
-```
-
-43. 
-
-```
-```
-
-44. 
-
-```
+camper: /website$ ls
+index.html  index.js  styles.css
 ```
 
 45. 
