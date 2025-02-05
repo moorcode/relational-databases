@@ -626,3 +626,17 @@ camper: /website$ touch footer.jpeg
 camper: /website$ 
 ```
 
+51. Use the __list__ command to check out the images you just added.
+
+```
+camper: /website$ ls
+background.jpg  footer.jpeg  header.png  index.html  index.js  styles.css
+```
+
+52. 
+
+```
+```
+
+
+
