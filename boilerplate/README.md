@@ -598,13 +598,18 @@ camper: /website$ ls -a
 ```
 
 47. 
+There's the hidden file. Do you see it? It didn't display before. It also includes `.` and `...` You used `cd ..` to go back a folder earlier. Change to the `.` directory.
 
 ```
+camper: /website$ cd .
+camper: /website$ 
 ```
 
-48. 
+48. You didn't go anywhere. The `.` takes you to the folder you are in, and `..` takes you back, or up, a folder. Websites need some images. Create `background.jpg` in the `website` folder.
 
 ```
+camper: /website$ touch background.jpg
+camper: /website$ 
 ```
 
 49. 
