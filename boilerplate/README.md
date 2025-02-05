@@ -612,13 +612,17 @@ camper: /website$ touch background.jpg
 camper: /website$ 
 ```
 
-49. 
+49. Next, add a header image. Create `header.png` in the `website` folder.
 
 ```
+camper: /website$ touch header.png
+camper: /website$ 
 ```
 
-50. 
+50. Finally, create `footer.jpeg` in the `website` folder.
 
 ```
+camper: /website$ touch footer.jpeg
+camper: /website$ 
 ```
 
