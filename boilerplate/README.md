@@ -633,9 +633,11 @@ camper: /website$ ls
 background.jpg  footer.jpeg  header.png  index.html  index.js  styles.css
 ```
 
-52. 
+52. Looks like images show up in pink. There's also three fonts to use for the website. The first one is "roboto". Create roboto.font in the website folder.
 
 ```
+camper: /website$ touch roboto.font
+camper: /website$ 
 ```
 
 
