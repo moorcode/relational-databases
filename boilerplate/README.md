@@ -633,12 +633,35 @@ camper: /website$ ls
 background.jpg  footer.jpeg  header.png  index.html  index.js  styles.css
 ```
 
-52. Looks like images show up in pink. There's also three fonts to use for the website. The first one is "roboto". Create roboto.font in the website folder.
+52. Looks like images show up in pink. There's also three fonts to use for the website. The first one is "roboto". Create `roboto.font` in the `website` folder.
 
 ```
 camper: /website$ touch roboto.font
 camper: /website$ 
 ```
 
+53. The next one is "lato". Create `lato.font` in the `website` folder.
 
+```
+camper: /website$ touch lato.font
+camper: /website$ 
+```
+
+54. Lastly, create `menlo.font` in the `website` folder.
+
+```
+camper: /website$ touch menlo.font
+camper: /website$ 
+```
+
+55. List the contents of this folder to see your new font files.
+
+```
+camper: /website$ ls
+background.jpg  footer.jpeg  header.png  index.html  index.js  lato.font  menlo.font  roboto.font  styles.css
+```
+
+56. Your three font files are there. There's three icons for the website as well. Create `CodeAlly.svg` in the `website` folder. 
+
+```
 
