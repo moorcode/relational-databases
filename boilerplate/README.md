@@ -94,14 +94,14 @@ camper: /test$ ls
 
 10. These are all files. There's no more folders to go into here. You can use `cd ..` to go back a folder level. The two dots will take you back one level. Go back to the `freeCodeCamp` folder.
 
-```
+```bash
 camper: /test$ cd ..
 camper: /freeCodeCamp$ 
 ```
 
 11. `test` got removed from the prompt since you left that folder and you're back in the `freeCodeCamp` folder. List the contents of what's here to remind yourself
 
-```
+```bash
 camper: /freeCodeCamp$ ls
 node_modules  package.json  package-lock.json  reset.sh  setup.sh  test
 ```
@@ -111,7 +111,7 @@ node_modules  package.json  package-lock.json  reset.sh  setup.sh  test
 > [!TIP]
 > `Enter` advances one line. _Down arrow_ advances to the end.
 
-```
+```bash
 camper: /freeCodeCamp$ more package.json 
 {
   "name": "freecodecamp",
@@ -136,21 +136,21 @@ camper: /freeCodeCamp$ more package.json
 
 14. Now you have a fresh screen 😄 List what's in here again.
 
-```
+```bash
 camper: /freeCodeCamp$ ls
 node_modules  package.json  package-lock.json  reset.sh  setup.sh  test
 ```
 
 15. You checked out the `test` folder and the `package.json` file. What next? Why don't you go into that `node_modules` directory.
 
-```
+```bash
 camper: /freeCodeCamp$ cd node_modules/
 camper: /node_modules$ 
 ```
 
 16. Now the prompt includes `node_modules` since that's where you are. List what's in the folder.
 
-```
+```bash
 camper: /node_modules$ ls
 ansi-colors           es-to-primitive          is-regex                          readdirp
 ansi-regex            fill-range               is-symbol                         require-directory
@@ -181,7 +181,7 @@ esprima               is-number                p-try
 
 17. That's a lot of folders. You can add a __flag__ to a command to use it different ways like this: `ls <flag>`. List the contents of the `node_modules` folder in _long list format_. Do that by adding the `-l` flag to the _list_ command.
 
-```
+```bash
 camper: /node_modules$ ls -l
 total 80
 drwxr-xr-x  3 gitpod gitpod   105 Feb  3 08:43 ansi-colors
@@ -286,14 +286,14 @@ drwxr-xr-x  2 gitpod gitpod    94 Feb  3 08:43 yargs-unparser
 
 18. It is showing more details about each item in here and it's a little easier to read. One of the folders is named `has`, why don't you change into it.
 
-```
+```bash
 camper: /node_modules$ cd has
 camper: /has$ 
 ```
 
 19. You are now in the has folder. List its contents.
 
-```
+```bash
 camper: /has$ ls
 LICENSE-MIT  package.json  README.md  src  test
 ```
@@ -301,7 +301,7 @@ LICENSE-MIT  package.json  README.md  src  test
 20. 
 There's a few files and folders here. Can you tell the difference? Take a look at more of that README.md file.
 
-```
+```bash
 camper: /has$ more README.md 
 # has
 
