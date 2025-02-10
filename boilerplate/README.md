@@ -1213,34 +1213,44 @@ camper: /website$ mv ./images/footer.jpeg client/assets/images/
 camper: /website$ 
 ```
 
-121. 
+121. View the file tree of this folder to make sure all your images are over in their new folder. Don't use any flags.
 
 ```
 ```
 
-122. 
+122. You don't need the old `images` folder anymore. You can use `rmdir <directory_name>` to remove a folder. `rmdir` stands for __remove directory__. Try to remove the `images` folder with `rmdir`. Make sure it's the one in the `website` folder.
 
 ```
+camper: /website$ rmdir images/
+rmdir: failed to remove 'images/': Directory not empty
+camper: /website$ 
 ```
 
-123. 
+123. Directory not empty? Oh yeah, there's still the background image in there. Remove the background image file in the `images` folder from here. Make sure it's the one in the `website/images` folder.
 
 ```
+camper: /website$ rm images/background.jpg 
+camper: /website$ 
 ```
 
-124. 
+124. Try to remove the `images` folder again with `rmdir`. Make sure it's the one in the `website` folder.
 
 ```
+camper: /website$ rmdir images/
+camper: /website$ 
 ```
 
-125. 
+125. I think it worked this time. List the contents to find out.
 
 ```
+camper: /website$ ls
+client  CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  index.html  index.js  lato.font  menlo.font  roboto.font  styles.css
 ```
 
-126. 
+126. It worked, the `images` folder is gone. Make a new `icons` folder in your `assets` folder while in the `website` folder.
 
 ```
+camper: /website$ mkdir client/assets/icons 
 ```
 
 127. 
