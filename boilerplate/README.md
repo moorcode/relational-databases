@@ -749,7 +749,7 @@ camper: /website$
 
 68. List the contents to make sure it's gone.
 
-```
+```bash
 camper: /website$ ls
 CodeAlly.svg  footer.jpeg       header.png  index.html  lato.font   roboto.font
 CodeRoad.svg  freeCodeCamp.svg  images      index.js    menlo.font  styles.css
@@ -757,41 +757,41 @@ CodeRoad.svg  freeCodeCamp.svg  images      index.js    menlo.font  styles.css
 
 69. Okay, it's gone. Next, copy `header.png` to the `images` folder.
 
-```
+```bash
 camper: /website$ cp header.png images/
 camper: /website$ 
 ```
 
 70. Last, copy the _footer_ image to the `images` folder.
 
-```
+```bash
 camper: /website$ cp footer.jpeg images/
 camper: /website$ 
 ```
 
 71. All the images should be copied over. Change to the `images` directory so you can make sure.
 
-```
+```bash
 camper: /website$ cd images/
 ```
 
 72. Check if the images are here by listing the contents.
 
-```
+```bash
 camper: /images$ ls
 background.jpg  footer.jpeg  header.png
 ```
 
 73. They all made it here. Go back to the `website` folder so you can delete the original files.
 
-```
+```bash
 camper: /images$ cd ..
 camper: /website$ 
 ```
 
 74. List the contents to remind yourself of the filenames to delete.
 
-```
+```bash
 camper: /website$ ls
 CodeAlly.svg  footer.jpeg       header.png  index.html  lato.font   roboto.font
 CodeRoad.svg  freeCodeCamp.svg  images      index.js    menlo.font  styles.css
@@ -799,58 +799,58 @@ CodeRoad.svg  freeCodeCamp.svg  images      index.js    menlo.font  styles.css
 
 75. There's two that you don't need anymore. Remove the _header_ image file from the `website` folder since you copied to the `images` folder.
 
-```
+```bash
 camper: /website$ rm header.png 
 ```
 
 76. It should be gone. Remove the _footer_ image from the `website` folder as well.
 
-```
+```bash
 camper: /website$ rm footer.jpeg 
 ```
 
 77. List the contents of the `website` folder to check if they are gone.
 
-```
+```bash
 camper: /website$ ls
 CodeAlly.svg  CodeRoad.svg  freeCodeCamp.svg  images  index.html  index.js  lato.font  menlo.font  roboto.font  styles.css
 ```
 
 78. Looks like they're all deleted. There was a mistake with the extensions for the font files. You can rename them with mv like this: `mv <filename> <new_filename>`. mv stands for __move__, it can __rename__ or move something. Rename `roboto.font` to `roboto.woff`.
 
-```
+```bash
 camper: /website$ mv roboto.font roboto.woff
 ```
 
 79. Use list to check if it worked.
 
-```
+```bash
 camper: /website$ ls
 CodeAlly.svg  CodeRoad.svg  freeCodeCamp.svg  images  index.html  index.js  lato.font  menlo.font  roboto.woff  styles.css
 ```
 
 80. Do you see the _roboto_ font? The rename worked. Next, rename the _lato_ font file to `lato.ttf`.
 
-```
+```bash
 camper: /website$ mv lato.font lato.ttf
 ```
 
 81. Lastly, rename the _menlo_ font to `menlo.otf`.
 
-```
+```bash
 camper: /website$ mv menlo.font menlo.otf
 ```
 
 82. Use the list command to make sure those last two got renamed.
 
-```
+```bash
 camper: /website$ ls
 CodeAlly.svg  CodeRoad.svg  freeCodeCamp.svg  images  index.html  index.js  lato.ttf  menlo.otf  roboto.woff  styles.css
 ```
 
 83. Take a look at the files to make sure they got renamed. Those font files could be organized into a folder as well. Make a `fonts` directory in the `website` folder to put them in.
 
-```
+```bash
 camper: /website$ mkdir fonts
 ```
 
