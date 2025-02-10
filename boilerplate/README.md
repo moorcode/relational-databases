@@ -1175,22 +1175,86 @@ camper: /website$ ls
 client  CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  header.png  images
 ```
 
-116. 
+116. There's the file you just moved. Next, you will move it to the `client/assets/images` folder. First, use find with the correct flag to search for `images`.
+
+```
+camper: /website$ find -name images
+./client/assets/images
+./client/src/images
+./images
+```
+
+117. There's your two image folders. Move `header.png` to the one with the longer path. Just use it as the destination to do so.
+
+```
+camper: /website$ mv header.png client/assets/images/
+camper: /website$ 
+```
+
+118. Use `find` to search for your `header.png` file and make sure it moved.
+
+```
+camper: /website$ find -name header.png
+./client/assets/images/header.png
+```
+
+119. There it is. Right where you put it. Next, search for your `footer.jpeg` file so you can move that over there.
+
+```
+camper: /website$ find -name footer.jpeg
+./footer.jpeg
+./images/footer.jpeg
+```
+
+120. It's in the original `images` folder. You can use that path with the move command to move it. Move `footer.jpeg` to the `client/assets/images` folder while in the `website` folder.
+
+```
+camper: /website$ mv ./images/footer.jpeg client/assets/images/
+camper: /website$ 
+```
+
+121. 
 
 ```
 ```
 
-117. 
+122. 
 
 ```
 ```
 
-118. 
+123. 
 
 ```
 ```
 
-119. 
+124. 
 
 ```
 ```
+
+125. 
+
+```
+```
+
+126. 
+
+```
+```
+
+127. 
+
+```
+```
+
+128. 
+
+```
+```
+
+129. 
+
+```
+```
+
