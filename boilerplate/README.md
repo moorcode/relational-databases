@@ -857,27 +857,131 @@ CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  images  index.html  index.j
 camper: /website$ mv roboto.woff fonts/
 ```
 
-86. 
+86. You can use `find` to __find__ things or __view__ a file tree. Enter `find` to view the file tree of the `website` folder to see all the files and folders within it.
+
+```
+camper: /website$ find
+.
+./.gitignore
+./CodeAlly.svg
+./CodeRoad.svg
+./freeCodeCamp.svg
+./index.html
+./index.js
+./styles.css
+./images
+./images/background.jpg
+./images/header.png
+./images/footer.jpeg
+./lato.ttf
+./menlo.otf
+./fonts
+./fonts/roboto.woff
+```
+
+87. You can see everything in this `website` folder and its descendant folders. Notice that they all start with `./` to represent this folder. You can see that your font moved to the `fonts` folder. Next, move the _lato_ font to the `fonts` folder.
+
+```
+camper: /website$ mv lato.ttf fonts/
+```
+
+88. There's one more font to move. Move the _menlo_ font to the `fonts` folder.
+
+```
+camper: /website$ mv menlo.otf fonts/
+```
+
+89. Use `find` again to list the whole file tree and make sure those two got moved.
+
+```
+camper: /website$ find
+.
+./.gitignore
+./CodeAlly.svg
+./CodeRoad.svg
+./freeCodeCamp.svg
+./index.html
+./index.js
+./styles.css
+./images
+./images/background.jpg
+./images/header.png
+./images/footer.jpeg
+./fonts
+./fonts/roboto.woff
+./fonts/lato.ttf
+./fonts/menlo.otf
+```
+
+90. Yes, you can see them all in the `fonts` folder. Let's organize some more. Make a `client` directory in the `website` folder for the client side files.
+
+```
+camper: /website$ mkdir client
+```
+
+91. You can make a folder in that `client` folder from here by adding it to the path like this: `mkdir client/<new_folder_name>`. Make a `src` directory in the `client` folder from here.
+
+```
+camper: /website$ mkdir client/src
+```
+
+92. You can move files all the way across the system from here with the right path. Move `index.html` to the `client/src` folder from here.
+
+```
+camper: /website$ mv index.html client/src/
+```
+
+93. Use find to view the file tree and make sure it moved.
+
+```
+camper: /website$ find
+.
+./.gitignore
+./CodeAlly.svg
+./CodeRoad.svg
+./freeCodeCamp.svg
+./index.js
+./styles.css
+./images
+./images/background.jpg
+./images/header.png
+./images/footer.jpeg
+./fonts
+./fonts/roboto.woff
+./fonts/lato.ttf
+./fonts/menlo.otf
+./client
+./client/src
+./client/src/index.html
+```
+
+94. 
 
 ```
 ```
 
-87. 
+95. 
 
 ```
 ```
 
-88. 
+96. 
 
 ```
 ```
 
-89. 
+97. 
 
 ```
 ```
 
-90. 
+98. 
 
 ```
 ```
+
+99. 
+
+```
+```
+
