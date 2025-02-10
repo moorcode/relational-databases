@@ -1108,17 +1108,89 @@ camper: /client$ cd assets/
 camper: /assets$ 
 ```
 
-106. 
+106. All the images and other assets can go here. Make an `images` directory in the `assets` folder for all the images.
+
+```
+camper: /assets$ mkdir images
+```
+
+107. Go to your new images folder.
+
+```
+camper: /assets$ cd images/
+camper: /images$ 
+```
+
+108. You want the images here. Create `background.jpg` in this folder.
+
+```
+camper: /images$ touch background.jpg
+```
+
+109. Wait. You don't need to recreate them. You can just move the other images here. Go back to the `website` folder from here. It's three folders back.
+
+```
+camper: /images$ cd ../../..
+camper: /website$ 
+```
+
+110. Now go to where the original images are. Change into the `images` folder.
+
+```
+camper: /website$ cd images/
+camper: /images$ 
+```
+
+111. List the contents of the `images` folder to see the files here.
+
+```
+camper: /images$ ls
+background.jpg  footer.jpeg  header.png
+```
+
+112. Umm, first I think you should move them back to the `website` folder. Move `header.png` back to the `website` folder. The destination for the file is `..`.
+
+```
+camper: /images$ mv header.png ..
+```
+
+113. List the contents of the `images` folder to see if it's gone.
+
+```
+camper: /images$ ls
+background.jpg  footer.jpeg
+```
+
+114. It's gone. Go back to the `website` folder.
+
+```
+camper: /images$ cd ..
+camper: /website$ 
+```
+
+115. List what's here.
+
+```
+camper: /website$ ls
+client  CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  header.png  images
+```
+
+116. 
 
 ```
 ```
 
-107. 
+117. 
 
 ```
 ```
 
-108. 
+118. 
+
+```
+```
+
+119. 
 
 ```
 ```
