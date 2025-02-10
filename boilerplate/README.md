@@ -715,6 +715,7 @@ camper: /website$
 63. Better make sure it worked. Change to the `images` directory.
 
 ```
+camper: /website$ cd images/
 ```
 
 64. List the contents to see if `background.jpg` is here.
@@ -758,12 +759,15 @@ camper: /website$ cp footer.jpeg images/
 camper: /website$ 
 ```
 
-71. 
+71. All the images should be copied over. Change to the `images` directory so you can make sure.
 
 ```
+camper: /website$ cd images/
 ```
 
-72. 
+72. Check if the images are here by listing the contents.
 
 ```
+camper: /images$ ls
+background.jpg  footer.jpeg  header.png
 ```
