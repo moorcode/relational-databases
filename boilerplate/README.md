@@ -1227,7 +1227,7 @@ camper: /website$
 
 122. You don't need the old `images` folder anymore. You can use `rmdir <directory_name>` to remove a folder. `rmdir` stands for __remove directory__. Try to remove the `images` folder with `rmdir`. Make sure it's the one in the `website` folder.
 
-```
+```bash
 camper: /website$ rmdir images/
 rmdir: failed to remove 'images/': Directory not empty
 camper: /website$ 
@@ -1235,40 +1235,40 @@ camper: /website$
 
 123. Directory not empty? Oh yeah, there's still the background image in there. Remove the background image file in the `images` folder from here. Make sure it's the one in the `website/images` folder.
 
-```
+```bash
 camper: /website$ rm images/background.jpg 
 camper: /website$ 
 ```
 
 124. Try to remove the `images` folder again with `rmdir`. Make sure it's the one in the `website` folder.
 
-```
+```bash
 camper: /website$ rmdir images/
 camper: /website$ 
 ```
 
 125. I think it worked this time. List the contents to find out.
 
-```
+```bash
 camper: /website$ ls
 client  CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  index.html  index.js  lato.font  menlo.font  roboto.font  styles.css
 ```
 
 126. It worked, the `images` folder is gone. Make a new `icons` folder in your `assets` folder while in the `website` folder.
 
-```
+```bash
 camper: /website$ mkdir client/assets/icons 
 ```
 
 127. Move the `CodeAlly.svg` file to your new `icons` folder.
 
-```
+```bash
 camper: /website$ mv CodeAlly.svg client/assets/icons/
 ```
 
 128. View the file tree of the `website` folder and make sure it moved.
 
-```
+```bash
 camper: /website$ find
 .
 ./.gitignore
@@ -1301,13 +1301,13 @@ camper: /website$ find
 
 129. Verify that the file moved to the `icons` folder. Next, move the _CodeRoad_ file to your `icons` folder.
 
-```
+```bash
 camper: /website$ mv CodeRoad.svg client/assets/icons/
 ```
 
 130. Lastly, move the _freeCodeCamp_ file to your `icons` folder.
 
-```
+```bash
 camper: /website$ mv freeCodeCamp.svg client/assets/icons/
 ```
 
