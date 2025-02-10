@@ -856,20 +856,20 @@ camper: /website$ mkdir fonts
 
 84. List the contents of the `website` folder to make sure your new folder is there.
 
-```
+```bash
 camper: /website$ ls
 CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  images  index.html  index.js  lato.ttf  menlo.otf  roboto.woff  styles.css
 ```
 
 85. See it? You renamed the font files with `mv`, you can also move files with it. Move the _roboto_ font to the new `fonts` folder. Here's an example: `mv <file> <destination>`.
 
-```
+```bash
 camper: /website$ mv roboto.woff fonts/
 ```
 
 86. You can use `find` to __find__ things or __view__ a file tree. Enter `find` to view the file tree of the `website` folder to see all the files and folders within it.
 
-```
+```bash
 camper: /website$ find
 .
 ./.gitignore
@@ -891,19 +891,19 @@ camper: /website$ find
 
 87. You can see everything in this `website` folder and its descendant folders. Notice that they all start with `./` to represent this folder. You can see that your font moved to the `fonts` folder. Next, move the _lato_ font to the `fonts` folder.
 
-```
+```bash
 camper: /website$ mv lato.ttf fonts/
 ```
 
 88. There's one more font to move. Move the _menlo_ font to the `fonts` folder.
 
-```
+```bash
 camper: /website$ mv menlo.otf fonts/
 ```
 
 89. Use `find` again to list the whole file tree and make sure those two got moved.
 
-```
+```bash
 camper: /website$ find
 .
 ./.gitignore
@@ -925,25 +925,25 @@ camper: /website$ find
 
 90. Yes, you can see them all in the `fonts` folder. Let's organize some more. Make a `client` directory in the `website` folder for the client side files.
 
-```
+```bash
 camper: /website$ mkdir client
 ```
 
 91. You can make a folder in that `client` folder from here by adding it to the path like this: `mkdir client/<new_folder_name>`. Make a `src` directory in the `client` folder from here.
 
-```
+```bash
 camper: /website$ mkdir client/src
 ```
 
 92. You can move files all the way across the system from here with the right path. Move `index.html` to the `client/src` folder from here.
 
-```
+```bash
 camper: /website$ mv index.html client/src/
 ```
 
 93. Use `find` to view the file tree and make sure it moved.
 
-```
+```bash
 camper: /website$ find
 .
 ./.gitignore
@@ -967,19 +967,19 @@ camper: /website$ find
 
 94. Can you see the `index.html` file in your new `src` folder? Looks like it moved 😄 There's some more files that can go in the `src` folder. Move `index.js` to it from here.
 
-```
+```bash
 camper: /website$ mv index.js client/src/
 ```
 
 95. Last is the CSS file. Move `styles.css` to the `src` folder.
 
-```
+```bash
 camper: /website$ mv styles.css client/src/
 ```
 
 96. Seems like you can do anything right from here. Take another look at the tree with `find`.
 
-```
+```bash
 camper: /website$ find
 .
 ./.gitignore
@@ -1003,7 +1003,7 @@ camper: /website$ find
 
 97. Things are looking more organized 😄 You can use`find` to display the tree of a different folder. View the file tree of the client folder from the `website` folder.
 
-```
+```bash
 camper: /website$ find client
 client
 client/src
@@ -1014,7 +1014,7 @@ client/src/styles.css
 
 98. Now you just see what's in the `client` folder. What else can `find` do? View the __help__ menu of the `find` command to look around.
 
-```
+```bash
 camper: /website$ find --help
 Usage: find [-H] [-L] [-P] [-Olevel] [-D debugopts] [path...] [expression]
 
