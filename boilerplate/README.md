@@ -793,27 +793,33 @@ CodeRoad.svg  freeCodeCamp.svg  images      index.js    menlo.font  styles.css
 camper: /website$ rm header.png 
 ```
 
-76. 
+76. It should be gone. Remove the _footer_ image from the `website` folder as well.
 
 ```
+camper: /website$ rm footer.jpeg 
 ```
 
-77. 
+77. List the contents of the `website` folder to check if they are gone.
 
 ```
+camper: /website$ ls
+CodeAlly.svg  CodeRoad.svg  freeCodeCamp.svg  images  index.html  index.js  lato.font  menlo.font  roboto.font  styles.css
 ```
 
-78. 
+78. Looks like they're all deleted. There was a mistake with the extensions for the font files. You can rename them with mv like this: `mv <filename> <new_filename>`. mv stands for __move__, it can __rename__ or move something. Rename `roboto.font` to `roboto.woff`.
 
 ```
+camper: /website$ mv roboto.font roboto.woff
 ```
 
-79. 
+79. Use list to check if it worked.
 
 ```
+camper: /website$ ls
+CodeAlly.svg  CodeRoad.svg  freeCodeCamp.svg  images  index.html  index.js  lato.font  menlo.font  roboto.woff  styles.css
 ```
 
-80. 
+80. Do you see the _roboto_ font? The rename worked. Next, rename the _lato_ font file to `lato.ttf`.
 
 ```
 ```
