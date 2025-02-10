@@ -32,42 +32,42 @@ freeCodeCamp
 > [!TIP]
 > `Tab`will complete the folder name.
 
-```
+```bash
 camper: /project$ cd freeCodeCamp/
 camper: /freeCodeCamp$ 
 ```
 
 5. You are in the `freecodecamp` folder now. You may have noticed that the prompt changed to include it. Print the working directory of the `freeCodeCamp` folder to see the full path of where you are.
 
-```
+```bash
 camper: /freeCodeCamp$ pwd
 /workspace/project/freeCodeCamp
 ```
 
 6. You can see the path of the `freeCodeCamp` folder. It's in the project folder you were just in. List the contents of the `freeCodeCamp` folder to see what's here.
 
-```
+```bash
 camper: /freeCodeCamp$ ls
 node_modules  package.json  package-lock.json  reset.sh  setup.sh  test
 ```
 
 7. There're several folders and files here. The folders are blue or green and the files include their extension. Next, change to that `test` directory.
 
-```
+```bash
 camper: /freeCodeCamp$ cd test
 camper: /test$ 
 ```
 
 8. You can see you are in the `test` folder now. It shows `test` in the prompt. Print the full path of this directory. Remember that __folder__ and __directory__ are the same thing.
 
-```
+```bash
 camper: /test$ pwd
 /workspace/project/freeCodeCamp/test
 ```
 
 9. That's the path to the `test` folder, it's in the `freeCodeCamp` folder. List the contents of this folder.
 
-```
+```bash
 camper: /test$ ls
 1000.test.js  1170.test.js  1330.test.js  1490.test.js  250.test.js  430.test.js  60.test.js   790.test.js
 100.test.js   1190.test.js  1340.test.js  1500.test.js  260.test.js  440.test.js  610.test.js  800.test.js
