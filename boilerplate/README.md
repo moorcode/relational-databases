@@ -1314,53 +1314,80 @@ camper: /website$ mv freeCodeCamp.svg client/assets/icons/
 131. View the file tree and make sure the files moved.
 
 ```
-
+camper: /website$ find
+.
+./.gitignore
+./index.html
+./index.js
+./lato.font
+./menlo.font
+./roboto.font
+./styles.css
+./client
+./client/assets
+./client/assets/images
+./client/assets/images/background.jpg
+./client/assets/images/header.png
+./client/assets/images/footer.jpeg
+./client/assets/icons
+./client/assets/icons/CodeAlly.svg
+./client/assets/icons/CodeRoad.svg
+./client/assets/icons/freeCodeCamp.svg
+./client/src
+./client/src/index.html
+./client/src/index.js
+./client/src/styles.css
+./client/src/images
+./fonts
+./fonts/lato.ttf
+./fonts/menlo.otf
+./fonts/roboto.woff
 ```
 
-132. 
+132. This looks much better. The three icons are now in the `icons` folder. Make a `fonts` folder in your `assets` folder from here for all the font files.
 
+```bash
+camper: /website$ mkdir client/assets/fonts
 ```
 
+133. Turns out you want some different fonts for the website. From here, create `roboto-bold.woff` in your new `fonts` folder. You can put the path in front of the filename of where you want it to go.
+
+```bash
+camper: /website$ touch client/assets/fonts/roboto-bold.woff
 ```
 
-133. 
+134. Next, create `roboto-light.woff` in your new `fonts` folder from here.
 
+```bash
+camper: /website$ touch client/assets/fonts/roboto-light.woff
 ```
 
-```
+135. View the file tree of the `client/assets/fonts` folder from here to see if your new files are there.
 
-134. 
-
-```
-
-```
-
-135. 
-
-```
+```bash
 
 ```
 
 136. 
 
-```
+```bash
 
 ```
 
 137. 
 
-```
+```bash
 
 ```
 
 138. 
 
-```
+```bash
 
 ```
 
 139. 
 
-```
+```bash
 
 ```
