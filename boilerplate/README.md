@@ -1365,28 +1365,162 @@ camper: /website$ touch client/assets/fonts/roboto-light.woff
 135. View the file tree of the `client/assets/fonts` folder from here to see if your new files are there.
 
 ```bash
-
+camper: /website$ find client/assets/fonts/
+client/assets/fonts/
+client/assets/fonts/roboto-bold.woff
+client/assets/fonts/roboto-light.woff
 ```
 
-136. 
+136. Two more fonts to go. Create `lato-bold.ttf` in the new `fonts` folder from here.
+
+```bash
+camper: /website$ touch client/assets/fonts/lato-bold.ttf
+```
+
+137. Lastly, create `lato-light.ttf` in your new fonts folder from here.
+
+```bash
+camper: /website$ touch client/assets/fonts/lato-light.ttf
+```
+
+138. View your file tree and make sure the files are there.
+
+```bash
+camper: /website$ find
+.
+./.gitignore
+./index.html
+./index.js
+./lato.font
+./menlo.font
+./roboto.font
+./styles.css
+./client
+./client/assets
+./client/assets/images
+./client/assets/images/background.jpg
+./client/assets/images/header.png
+./client/assets/images/footer.jpeg
+./client/assets/icons
+./client/assets/icons/CodeAlly.svg
+./client/assets/icons/CodeRoad.svg
+./client/assets/icons/freeCodeCamp.svg
+./client/assets/fonts
+./client/assets/fonts/roboto-bold.woff
+./client/assets/fonts/roboto-light.woff
+./client/assets/fonts/lato-bold.ttf
+./client/assets/fonts/lato-light.ttf
+./client/src
+./client/src/index.html
+./client/src/index.js
+./client/src/styles.css
+./client/src/images
+./fonts
+./fonts/lato.ttf
+./fonts/menlo.otf
+./fonts/roboto.woff
+```
+
+139. Things are looking more organized 😄 The new fonts are there. Now you can remove the old `fonts` folder and everything in it. You can't do that with `rmdir` since it's not empty. View the _help_ menu of the `rm` command to see if you can find anything.
+
+```bash
+camper: /website$ rm --help
+Usage: rm [OPTION]... [FILE]...
+Remove (unlink) the FILE(s).
+
+  -f, --force           ignore nonexistent files and arguments, never prompt
+  -i                    prompt before every removal
+  -I                    prompt once before removing more than three files, or
+                          when removing recursively; less intrusive than -i,
+                          while still giving protection against most mistakes
+      --interactive[=WHEN]  prompt according to WHEN: never, once (-I), or
+                          always (-i); without WHEN, prompt always
+      --one-file-system  when removing a hierarchy recursively, skip any
+                          directory that is on a file system different from
+                          that of the corresponding command line argument
+      --no-preserve-root  do not treat '/' specially
+      --preserve-root[=all]  do not remove '/' (default);
+                              with 'all', reject any command line argument
+                              on a separate device from its parent
+  -r, -R, --recursive   remove directories and their contents recursively
+  -d, --dir             remove empty directories
+  -v, --verbose         explain what is being done
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, rm does not remove directories.  Use the --recursive (-r or -R)
+option to remove each listed directory, too, along with all of its contents.
+
+To remove a file whose name starts with a '-', for example '-foo',
+use one of these commands:
+  rm -- -foo
+
+  rm ./-foo
+
+Note that if you use rm to remove a file, it might be possible to recover
+some of its contents, given sufficient expertise and/or time.  For greater
+assurance that the contents are truly unrecoverable, consider using shred.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/rm>
+or available locally via: info '(coreutils) rm invocation'
+```
+
+140. 
 
 ```bash
 
 ```
 
-137. 
+141. 
 
 ```bash
 
 ```
 
-138. 
+142. 
 
 ```bash
 
 ```
 
-139. 
+143. 
+
+```bash
+
+```
+
+144. 
+
+```bash
+
+```
+
+145. 
+
+```bash
+
+```
+
+146. 
+
+```bash
+
+```
+
+147. 
+
+```bash
+
+```
+
+148. 
+
+```bash
+
+```
+
+149. 
 
 ```bash
 
