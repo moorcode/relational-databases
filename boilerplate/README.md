@@ -1466,37 +1466,41 @@ Full documentation <https://www.gnu.org/software/coreutils/rm>
 or available locally via: info '(coreutils) rm invocation'
 ```
 
-140. 
+140. There's a `-r` flag that says, __remove directories and their contents recursively__. That will remove the folder and everything in it. Use the __remove__ command with that flag to remove the `fonts` folder. Make sure it's the one in the `website` folder. Be careful not to remove the wrong folder.
 
 ```bash
-
+camper: /website$ find -name fonts
+./client/assets/fonts
+./fonts
+camper: /website$ rm -r ./fonts
 ```
 
-141. 
+141. List what's here to see if it's gone.
 
 ```bash
-
+camper: /website$ ls
+client  index.html  index.js  lato.font  menlo.font  roboto.font  styles.css
 ```
 
-142. 
+142. Looks like it’s gone. Surely, it went to the trash can right? No, it’s just gone. You should be very careful when recursively removing files like that. It will delete everything, and can destroy your operating system. There's a few more files for the boilerplate. Create `package.json` in the `website` folder.
 
 ```bash
-
+camper: /website$ touch package.json
 ```
 
-143. 
+143. Next, create `server.js` in the `website` folder.
 
 ```bash
-
+camper: /website$ touch server.js
 ```
 
-144. 
+144. Lastly, create `README.md` in the `website` folder.
 
 ```bash
-
+camper: /website$ touch README.md
 ```
 
-145. 
+145. List the content of this folder to make sure your new files are there.
 
 ```bash
 
