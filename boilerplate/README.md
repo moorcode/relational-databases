@@ -1,4 +1,4 @@
-# Relationsal Databases
+# Relational Databases
 
 ## Boilerplate
 
@@ -407,6 +407,11 @@ freeCodeCamp
 ```
 
 33. That's right. Why don't you get a fresh start by clearing the terminal.
+
+```
+camper: /website$ clear
+camper: /website$ 
+```
 
 34. You will be making a __website boilerplate__. You can make a new folder with `mkdir <folder_name>`. `mkdir` stands for _make directory_. Make a `website` directory in this `project` folder. Remember that directory and folder mean the same thing.
 
@@ -1253,18 +1258,107 @@ client  CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  index.html  index.j
 camper: /website$ mkdir client/assets/icons 
 ```
 
-127. 
+127. Move the `CodeAlly.svg` file to your new `icons` folder.
 
 ```
+camper: /website$ mv CodeAlly.svg client/assets/icons/
 ```
 
-128. 
+128. View the file tree of the `website` folder and make sure it moved.
 
 ```
+camper: /website$ find
+.
+./.gitignore
+./CodeRoad.svg
+./freeCodeCamp.svg
+./index.html
+./index.js
+./lato.font
+./menlo.font
+./roboto.font
+./styles.css
+./client
+./client/assets
+./client/assets/images
+./client/assets/images/background.jpg
+./client/assets/images/header.png
+./client/assets/images/footer.jpeg
+./client/assets/icons
+./client/assets/icons/CodeAlly.svg
+./client/src
+./client/src/index.html
+./client/src/index.js
+./client/src/styles.css
+./client/src/images
+./fonts
+./fonts/lato.ttf
+./fonts/menlo.otf
+./fonts/roboto.woff
 ```
 
-129. 
+129. Verify that the file moved to the `icons` folder. Next, move the _CodeRoad_ file to your `icons` folder.
 
 ```
+camper: /website$ mv CodeRoad.svg client/assets/icons/
 ```
 
+130. Lastly, move the _freeCodeCamp_ file to your `icons` folder.
+
+```
+camper: /website$ mv freeCodeCamp.svg client/assets/icons/
+```
+
+131. View the file tree and make sure the files moved.
+
+```
+
+```
+
+132. 
+
+```
+
+```
+
+133. 
+
+```
+
+```
+
+134. 
+
+```
+
+```
+
+135. 
+
+```
+
+```
+
+136. 
+
+```
+
+```
+
+137. 
+
+```
+
+```
+
+138. 
+
+```
+
+```
+
+139. 
+
+```
+
+```
