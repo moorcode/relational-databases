@@ -1055,28 +1055,28 @@ you have no web access, by sending email to <bug-findutils@gnu.org>.
 
 99. The menu isn't very pretty, but there's a `-name` flag in there. You can use it to search for something with `find -name <filename>`. Use find with the `-name` flag to search for `index.html`
 
-```
+```bash
 camper: /website$ find -name index.html
 ./client/src/index.html
 ```
 
 100. It shows you where that file is. Using the same command, find where the styles.css file is.
 
-```
+```bash
 camper: /website$ find -name styles.css
 ./client/src/styles.css
 ```
 
 101. You can search for folders with it, as well. Using the same command and flag, find the `src` folder.
 
-```
+```bash
 camper: /website$ find -name src
 ./client/src
 ```
 
 102. 😄 View the file tree of the `website` folder to see what else you need to do.
 
-```
+```bash
 camper: /website$ find
 .
 ./.gitignore
@@ -1100,46 +1100,46 @@ camper: /website$ find
 
 103. What's next? More organizing! You should put all the assets in one spot. Change into the `client` folder.
 
-```
+```bash
 camper: /website$ cd client/
 camper: /client$ 
 ```
 
 104. Make a new directory named `assets` in the `client` folder.
 
-```
+```bash
 camper: /client$ mkdir assets
 ```
 
 105. Change into the new `assets` folder.
 
-```
+```bash
 camper: /client$ cd assets/
 camper: /assets$ 
 ```
 
 106. All the images and other assets can go here. Make an `images` directory in the `assets` folder for all the images.
 
-```
+```bash
 camper: /assets$ mkdir images
 ```
 
 107. Go to your new images folder.
 
-```
+```bash
 camper: /assets$ cd images/
 camper: /images$ 
 ```
 
 108. You want the images here. Create `background.jpg` in this folder.
 
-```
+```bash
 camper: /images$ touch background.jpg
 ```
 
 109. Wait. You don't need to recreate them. You can just move the other images here. Go back to the `website` folder from here. It's three folders back.
 
-```
+```bash
 camper: /images$ cd ../../..
 camper: /website$ 
 ```
