@@ -931,7 +931,7 @@ camper: /website$ mkdir client/src
 camper: /website$ mv index.html client/src/
 ```
 
-93. Use find to view the file tree and make sure it moved.
+93. Use `find` to view the file tree and make sure it moved.
 
 ```
 camper: /website$ find
@@ -955,14 +955,16 @@ camper: /website$ find
 ./client/src/index.html
 ```
 
-94. 
+94. Can you see the `index.html` file in your new `src` folder? Looks like it moved 😄 There's some more files that can go in the `src` folder. Move `index.js` to it from here.
 
 ```
+camper: /website$ mv index.js client/src/
 ```
 
-95. 
+95. Last is the CSS file. Move `styles.css` to the `src` folder.
 
 ```
+camper: /website$ mv styles.css client/src/
 ```
 
 96. 
