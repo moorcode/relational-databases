@@ -1225,9 +1225,6 @@ camper: /website$
 
 121. View the file tree of this folder to make sure all your images are over in their new folder. Don't use any flags.
 
-```
-```
-
 122. You don't need the old `images` folder anymore. You can use `rmdir <directory_name>` to remove a folder. `rmdir` stands for __remove directory__. Try to remove the `images` folder with `rmdir`. Make sure it's the one in the `website` folder.
 
 ```
