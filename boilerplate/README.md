@@ -694,7 +694,7 @@ camper: /website$
 
 59. Check out the new icons you just added by listing the contents of the folder they are in.
 
-```
+```bash
 camper: /website$ ls
 background.jpg  CodeRoad.svg  freeCodeCamp.svg  index.html  lato.font   roboto.font
 CodeAlly.svg    footer.jpeg   header.png        index.js    menlo.font  styles.css
@@ -702,29 +702,29 @@ CodeAlly.svg    footer.jpeg   header.png        index.js    menlo.font  styles.c
 
 60. The icons are pink as well. I think the images should go in a separate folder to clean it up a little. Make an `images` directory in the `website` folder to put them in.
 
-```
+```bash
 camper: /website$ mkdir images
 camper: /website$ 
 ```
 
-61. List the contents of the website folder to make sure your new folder is there.
+61. List the contents of the `website` folder to make sure your new folder is there.
 
-```
+```bash
 camper: /website$ ls
 background.jpg  CodeRoad.svg  freeCodeCamp.svg  images      index.js   menlo.font   styles.css
 CodeAlly.svg    footer.jpeg   header.png        index.html  lato.font  roboto.font
 ```
 
-62. There's your new `images` folder. It's blue. You can copy a file with `cp <file> <destination>`. `cp` stands for __copy__. Copy `background.jpg` to your `images` folder.
+62. There's your new `images` folder. It's blue. You can __copy__ a file with `cp <file> <destination>`. `cp` stands for __copy__. Copy `background.jpg` to your `images` folder.
 
-```
+```bash
 camper: /website$ cp background.jpg images/
 camper: /website$ 
 ```
 
 63. Better make sure it worked. Change to the `images` directory.
 
-```
+```bash
 camper: /website$ cd images/
 ```
 
@@ -734,7 +734,7 @@ camper: /website$ cd images/
 
 66. Remind yourself of the files here by listing the contents.
 
-```
+```bash
 camper: /website$ ls
 background.jpg  CodeRoad.svg  freeCodeCamp.svg  images      index.js   menlo.font   styles.css
 CodeAlly.svg    footer.jpeg   header.png        index.html  lato.font  roboto.font
@@ -742,7 +742,7 @@ CodeAlly.svg    footer.jpeg   header.png        index.html  lato.font  roboto.fo
 
 67. You copied the background image to the `images` folder so you don't need the one here anymore. You can __remove__ a file with `rm <filename>`. Remove `background.jpg` from the `website` folder.
 
-```
+```bash
 camper: /website$ rm background.jpg 
 camper: /website$ 
 ```
