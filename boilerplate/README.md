@@ -1146,48 +1146,48 @@ camper: /website$
 
 110. Now go to where the original images are. Change into the `images` folder.
 
-```
+```bash
 camper: /website$ cd images/
 camper: /images$ 
 ```
 
 111. List the contents of the `images` folder to see the files here.
 
-```
+```bash
 camper: /images$ ls
 background.jpg  footer.jpeg  header.png
 ```
 
 112. Umm, first I think you should move them back to the `website` folder. Move `header.png` back to the `website` folder. The destination for the file is `..`.
 
-```
+```bash
 camper: /images$ mv header.png ..
 ```
 
 113. List the contents of the `images` folder to see if it's gone.
 
-```
+```bash
 camper: /images$ ls
 background.jpg  footer.jpeg
 ```
 
 114. It's gone. Go back to the `website` folder.
 
-```
+```bash
 camper: /images$ cd ..
 camper: /website$ 
 ```
 
 115. List what's here.
 
-```
+```bash
 camper: /website$ ls
 client  CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  header.png  images
 ```
 
 116. There's the file you just moved. Next, you will move it to the `client/assets/images` folder. First, use find with the correct flag to search for `images`.
 
-```
+```bash
 camper: /website$ find -name images
 ./client/assets/images
 ./client/src/images
@@ -1196,21 +1196,21 @@ camper: /website$ find -name images
 
 117. There's your two image folders. Move `header.png` to the one with the longer path. Just use it as the destination to do so.
 
-```
+```bash
 camper: /website$ mv header.png client/assets/images/
 camper: /website$ 
 ```
 
 118. Use `find` to search for your `header.png` file and make sure it moved.
 
-```
+```bash
 camper: /website$ find -name header.png
 ./client/assets/images/header.png
 ```
 
 119. There it is. Right where you put it. Next, search for your `footer.jpeg` file so you can move that over there.
 
-```
+```bash
 camper: /website$ find -name footer.jpeg
 ./footer.jpeg
 ./images/footer.jpeg
@@ -1218,7 +1218,7 @@ camper: /website$ find -name footer.jpeg
 
 120. It's in the original `images` folder. You can use that path with the move command to move it. Move `footer.jpeg` to the `client/assets/images` folder while in the `website` folder.
 
-```
+```bash
 camper: /website$ mv ./images/footer.jpeg client/assets/images/
 camper: /website$ 
 ```
