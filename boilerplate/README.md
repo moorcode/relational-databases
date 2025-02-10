@@ -324,14 +324,14 @@ has({}, 'hasOwnProperty'); // false
 
 21. Nothing noteworthy in there. You can't see what's in the here anymore, list the contents again.
 
-```
+```bash
 camper: /has$ ls
 LICENSE-MIT  package.json  README.md  src  test
 ```
 
 22. That one file doesn't appear to have an extension. Strange. Take a look at more of the that _license_ file that doesn't show an extension.
 
-```
+```bash
 camper: /has$ more LICENSE-MIT 
 Copyright (c) 2013 Thiago de Arruda
 
@@ -360,21 +360,21 @@ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
 
 26. View the full path of this folder.
 
-```
+```bash
 camper: /src$ pwd
 /workspace/project/freeCodeCamp/node_modules/has/src
 ```
 
 27. Getting deeper still. You can see that each new folder has a `/` in front of it. Take a look at what's in this folder.
 
-```
+```bash
 camper: /src$ ls
 index.js
 ```
 
 28. Only one file here. Show me what's in it with `more`.
 
-```
+```bash
 camper: /src$ more index.js 
 'use strict';
 
@@ -385,7 +385,7 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 29. It's some JavaScript 😄 I think you've fooled around enough. Why don't you navigate out of here. Change back to the has directory.
 
-```
+```bash
 camper: /src$ cd ..
 camper: /has$ 
 ```
@@ -394,35 +394,35 @@ camper: /has$
 
 31. You can go back two folders with `cd ../..`. Each set of dots represents another folder level. Go back to the `project` directory from the `node_modules` directory.
 
-```
+```bash
 camper: /node_modules$ cd ../..
 camper: /project$ 
 ```
 
 32. You are back in the `project` folder where you started. List what's in here again.
 
-```
+```bash
 camper: /project$ ls
 freeCodeCamp
 ```
 
 33. That's right. Why don't you get a fresh start by clearing the terminal.
 
-```
+```bash
 camper: /website$ clear
 camper: /website$ 
 ```
 
 34. You will be making a __website boilerplate__. You can make a new folder with `mkdir <folder_name>`. `mkdir` stands for _make directory_. Make a `website` directory in this `project` folder. Remember that directory and folder mean the same thing.
 
-```
+```bash
 camper: /project$ mkdir website
 camper: /project$ 
 ```
 
 35. List what's here to make sure it got created.
 
-```
+```bash
 camper: /project$ ls
 freeCodeCamp  website
 ```
@@ -431,32 +431,37 @@ freeCodeCamp  website
 
 37. List the contents of this website folder.
 
-38. It's brand new, there's nothing in it yet. The `echo` command lets you print anything to the terminal. You used it in the first lesson. Just type what you want to print after it. Use it to print `hello website` to the terminal.
+38. It's brand new, there's nothing in it yet. The `echo` command lets you __print__ anything to the terminal. You used it in the first lesson. Just type what you want to print after it. Use it to print `hello website` to the terminal.
+
+```bash
+camper: /website$ echo hello website
+hello website
+```
 
 39. Websites usually have an `index.html` file. You can use `touch <filename>` to create a new file. Create `index.html` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch index.html
 camper: /website$ 
 ```
 
-40. They usually have a CSS file as well. Create styles.css in the website folder using the same method.
+40. They usually have a CSS file as well. Create `styles.css` in the `website` folder using the same method.
 
 
-41. List the contents of the website folder to make sure they got created.
+41. List the contents of the `website` folder to make sure they got created.
 
-```
+```bash
 camper: /website$ ls
 index.html  styles.css
 ```
 
 42. There they are. Next is a JavaScript file. Create `index.js` in the `website` folder with the method you have been using.
 
-43. You might turn this into a __git repository__. Create `.gitignore` in the website folder with the same method.
+43. You might turn this into a __git repository__. Create `.gitignore` in the `website` folder with the same method.
 
-44. List the contents of the website folder to see your new files.
+44. List the contents of the `website` folder to see your new files.
 
-```
+```bash
 camper: /website$ ls
 index.html  index.js  styles.css
 ```
