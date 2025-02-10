@@ -731,7 +731,39 @@ CodeAlly.svg    footer.jpeg   header.png        index.html  lato.font  roboto.fo
 
 67. You copied the background image to the `images` folder so you don't need the one here anymore. You can __remove__ a file with `rm <filename>`. Remove `background.jpg` from the `website` folder.
 
-68. 
+```
+camper: /website$ rm background.jpg 
+camper: /website$ 
+```
 
-69. 
+68. List the contents to make sure it's gone.
 
+```
+camper: /website$ ls
+CodeAlly.svg  footer.jpeg       header.png  index.html  lato.font   roboto.font
+CodeRoad.svg  freeCodeCamp.svg  images      index.js    menlo.font  styles.css
+```
+
+69. Okay, it's gone. Next, copy `header.png` to the `images` folder.
+
+```
+camper: /website$ cp header.png images/
+camper: /website$ 
+```
+
+70. Last, copy the footer image to the `images` folder.
+
+```
+camper: /website$ cp footer.jpeg images/
+camper: /website$ 
+```
+
+71. 
+
+```
+```
+
+72. 
+
+```
+```
