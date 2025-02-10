@@ -6,7 +6,7 @@ In this 170-lesson course, you will learn terminal commands by creating a websit
 
 This course runs in a virtual Linux machine using Gitpod.
 
-1. __The first thing you need to do is start the terminal.__ Do that in VS Code the short way by pressing `ctrl+shift+\`\` , or the long way by clicking the _hamburger_ menu at the top left of the screen, going to the _terminal_ section, and clicking _new terminal_. Once you open a new one, type `echo hello terminal` into the terminal and press enter.
+1. __The first thing you need to do is start the terminal.__ Do that the short way by pressing `ctrl+shift+\`\` , or the long way by clicking the _hamburger_ menu at the top left of the screen, going to the _terminal_ section, and clicking _new terminal_. Once you open a new one, type `echo hello terminal` into the terminal and press enter.
 
 ```
 camper: /project$ echo hello terminal
@@ -664,4 +664,74 @@ background.jpg  footer.jpeg  header.png  index.html  index.js  lato.font  menlo.
 56. Your three font files are there. There's three icons for the website as well. Create `CodeAlly.svg` in the `website` folder. 
 
 ```
+camper: /website$ touch CodeAlly.svg
+camper: /website$
+```
+
+57. Next, create `CodeRoad.svg` in the `website` folder.
+
+```
+camper: /website$ touch CodeRoad.svg
+camper: /website$ 
+```
+
+68. Finally, create `freeCodeCamp.svg` in the `website` folder.
+
+```
+camper: /website$ touch freeCodeCamp.svg
+camper: /website$ 
+```
+
+59. Check out the new icons you just added by listing the contents of the folder they are in.
+
+```
+camper: /website$ ls
+background.jpg  CodeRoad.svg  freeCodeCamp.svg  index.html  lato.font   roboto.font
+CodeAlly.svg    footer.jpeg   header.png        index.js    menlo.font  styles.css
+```
+
+60. The icons are pink as well. I think the images should go in a separate folder to clean it up a little. Make an `images` directory in the `website` folder to put them in.
+
+```
+camper: /website$ mkdir images
+camper: /website$ 
+```
+
+61. List the contents of the website folder to make sure your new folder is there.
+
+```
+camper: /website$ ls
+background.jpg  CodeRoad.svg  freeCodeCamp.svg  images      index.js   menlo.font   styles.css
+CodeAlly.svg    footer.jpeg   header.png        index.html  lato.font  roboto.font
+```
+
+62. There's your new `images` folder. It's blue. You can copy a file with `cp <file> <destination>`. `cp` stands for __copy__. Copy `background.jpg` to your `images` folder.
+
+```
+camper: /website$ cp background.jpg images/
+camper: /website$ 
+```
+
+63. Better make sure it worked. Change to the `images` directory.
+
+```
+```
+
+64. List the contents to see if `background.jpg` is here.
+
+65. There it is. Looks like the copy worked. Change back to the `website` directory so you can copy the other ones.
+
+66. Remind yourself of the files here by listing the contents.
+
+```
+camper: /website$ ls
+background.jpg  CodeRoad.svg  freeCodeCamp.svg  images      index.js   menlo.font   styles.css
+CodeAlly.svg    footer.jpeg   header.png        index.html  lato.font  roboto.font
+```
+
+67. You copied the background image to the `images` folder so you don't need the one here anymore. You can __remove__ a file with `rm <filename>`. Remove `background.jpg` from the `website` folder.
+
+68. 
+
+69. 
 
