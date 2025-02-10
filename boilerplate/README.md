@@ -822,4 +822,62 @@ CodeAlly.svg  CodeRoad.svg  freeCodeCamp.svg  images  index.html  index.js  lato
 80. Do you see the _roboto_ font? The rename worked. Next, rename the _lato_ font file to `lato.ttf`.
 
 ```
+camper: /website$ mv lato.font lato.ttf
+```
+
+81. Lastly, rename the _menlo_ font to `menlo.otf`.
+
+```
+camper: /website$ mv menlo.font menlo.otf
+```
+
+82. Use the list command to make sure those last two got renamed.
+
+```
+camper: /website$ ls
+CodeAlly.svg  CodeRoad.svg  freeCodeCamp.svg  images  index.html  index.js  lato.ttf  menlo.otf  roboto.woff  styles.css
+```
+
+83. Take a look at the files to make sure they got renamed. Those font files could be organized into a folder as well. Make a `fonts` directory in the `website` folder to put them in.
+
+```
+camper: /website$ mkdir fonts
+```
+
+84. List the contents of the `website` folder to make sure your new folder is there.
+
+```
+camper: /website$ ls
+CodeAlly.svg  CodeRoad.svg  fonts  freeCodeCamp.svg  images  index.html  index.js  lato.ttf  menlo.otf  roboto.woff  styles.css
+```
+
+85. See it? You renamed the font files with `mv`, you can also move files with it. Move the _roboto_ font to the new `fonts` folder. Here's an example: `mv <file> <destination>`.
+
+```
+camper: /website$ mv roboto.woff fonts/
+```
+
+86. 
+
+```
+```
+
+87. 
+
+```
+```
+
+88. 
+
+```
+```
+
+89. 
+
+```
+```
+
+90. 
+
+```
 ```
