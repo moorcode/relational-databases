@@ -468,7 +468,7 @@ index.html  index.js  styles.css
 
 45. There's three files, but where's the `.gitignore` file? I think it's hidden. Most commands have a `--help` flag to show what the command can do. Display the _help_ menu for the `ls` command. Here's an example: `command <flag>`
 
-```
+```bash
 camper: /website$ ls --help
 Usage: ls [OPTION]... [FILE]...
 List information about the FILEs (the current directory by default).
@@ -594,7 +594,7 @@ or available locally via: info '(coreutils) ls invocation'
 
 46. Scroll through the menu to see the flags that go with `ls`. The flag you are looking for is `--all`, or `-a` for short. List __all__ the contents of the `website` folder using the correct flag.
 
-```
+```bash
 camper: /website$ ls -all
 total 0
 drwxr-xr-x 2 gitpod gitpod  76 Feb  3 09:28 .
@@ -610,84 +610,84 @@ camper: /website$ ls -a
 47. 
 There's the hidden file. Do you see it? It didn't display before. It also includes `.` and `...` You used `cd ..` to go back a folder earlier. Change to the `.` directory.
 
-```
+```bash
 camper: /website$ cd .
 camper: /website$ 
 ```
 
 48. You didn't go anywhere. The `.` takes you to the folder you are in, and `..` takes you back, or up, a folder. Websites need some images. Create `background.jpg` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch background.jpg
 camper: /website$ 
 ```
 
 49. Next, add a header image. Create `header.png` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch header.png
 camper: /website$ 
 ```
 
 50. Finally, create `footer.jpeg` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch footer.jpeg
 camper: /website$ 
 ```
 
 51. Use the __list__ command to check out the images you just added.
 
-```
+```bash
 camper: /website$ ls
 background.jpg  footer.jpeg  header.png  index.html  index.js  styles.css
 ```
 
 52. Looks like images show up in pink. There's also three fonts to use for the website. The first one is "roboto". Create `roboto.font` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch roboto.font
 camper: /website$ 
 ```
 
 53. The next one is "lato". Create `lato.font` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch lato.font
 camper: /website$ 
 ```
 
 54. Lastly, create `menlo.font` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch menlo.font
 camper: /website$ 
 ```
 
 55. List the contents of this folder to see your new font files.
 
-```
+```bash
 camper: /website$ ls
 background.jpg  footer.jpeg  header.png  index.html  index.js  lato.font  menlo.font  roboto.font  styles.css
 ```
 
 56. Your three font files are there. There's three icons for the website as well. Create `CodeAlly.svg` in the `website` folder. 
 
-```
+```bash
 camper: /website$ touch CodeAlly.svg
 camper: /website$
 ```
 
 57. Next, create `CodeRoad.svg` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch CodeRoad.svg
 camper: /website$ 
 ```
 
 68. Finally, create `freeCodeCamp.svg` in the `website` folder.
 
-```
+```bash
 camper: /website$ touch freeCodeCamp.svg
 camper: /website$ 
 ```
