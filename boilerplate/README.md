@@ -1055,4 +1055,70 @@ camper: /website$ find -name index.html
 ```
 camper: /website$ find -name styles.css
 ./client/src/styles.css
-````
+```
+
+101. You can search for folders with it, as well. Using the same command and flag, find the `src` folder.
+
+```
+camper: /website$ find -name src
+./client/src
+```
+
+102. 😄 View the file tree of the `website` folder to see what else you need to do.
+
+```
+camper: /website$ find
+.
+./.gitignore
+./CodeAlly.svg
+./CodeRoad.svg
+./freeCodeCamp.svg
+./images
+./images/background.jpg
+./images/header.png
+./images/footer.jpeg
+./fonts
+./fonts/roboto.woff
+./fonts/lato.ttf
+./fonts/menlo.otf
+./client
+./client/src
+./client/src/index.html
+./client/src/index.js
+./client/src/styles.css
+```
+
+103. What's next? More organizing! You should put all the assets in one spot. Change into the `client` folder.
+
+```
+camper: /website$ cd client/
+camper: /client$ 
+```
+
+104. Make a new directory named `assets` in the `client` folder.
+
+```
+camper: /client$ mkdir assets
+```
+
+105. Change into the new `assets` folder.
+
+```
+camper: /client$ cd assets/
+camper: /assets$ 
+```
+
+106. 
+
+```
+```
+
+107. 
+
+```
+```
+
+108. 
+
+```
+```
