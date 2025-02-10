@@ -752,7 +752,7 @@ camper: /website$ cp header.png images/
 camper: /website$ 
 ```
 
-70. Last, copy the footer image to the `images` folder.
+70. Last, copy the _footer_ image to the `images` folder.
 
 ```
 camper: /website$ cp footer.jpeg images/
@@ -770,4 +770,50 @@ camper: /website$ cd images/
 ```
 camper: /images$ ls
 background.jpg  footer.jpeg  header.png
+```
+
+73. They all made it here. Go back to the `website` folder so you can delete the original files.
+
+```
+camper: /images$ cd ..
+camper: /website$ 
+```
+
+74. List the contents to remind yourself of the filenames to delete.
+
+```
+camper: /website$ ls
+CodeAlly.svg  footer.jpeg       header.png  index.html  lato.font   roboto.font
+CodeRoad.svg  freeCodeCamp.svg  images      index.js    menlo.font  styles.css
+```
+
+75. There's two that you don't need anymore. Remove the _header_ image file from the `website` folder since you copied to the `images` folder.
+
+```
+camper: /website$ rm header.png 
+```
+
+76. 
+
+```
+```
+
+77. 
+
+```
+```
+
+78. 
+
+```
+```
+
+79. 
+
+```
+```
+
+80. 
+
+```
 ```
