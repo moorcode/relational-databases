@@ -1503,13 +1503,15 @@ camper: /website$ touch README.md
 145. List the content of this folder to make sure your new files are there.
 
 ```bash
-
+camper: /website$ ls
+client  index.html  index.js  lato.font  menlo.font  package.json  README.md  roboto.font  server.js  styles.css
 ```
 
-146. 
+146. The boilerplate is complete. Use `echo` to print `Yay!` to the terminal.
 
 ```bash
-
+camper: /website$ echo Yay!
+Yay!
 ```
 
 147. 
