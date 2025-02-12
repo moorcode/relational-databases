@@ -1514,20 +1514,13 @@ camper: /website$ echo Yay!
 Yay!
 ```
 
-147. 
+147. Print `I finished the boilerplate!` to the terminal.
+
+148. Print `one more thing...` to the terminal
+
+149. You can print to a file instead of the terminal with `echo text >> filename`. Use it to print I made this boilerplate to your `README.md` file.
 
 ```bash
-
-```
-
-148. 
-
-```bash
-
-```
-
-149. 
-
-```bash
-
+camper: /website$ echo I made this boilerplate >> README.md 
+camper: /website$ 
 ```
