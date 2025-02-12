@@ -6,7 +6,7 @@ In this 170-lesson course, you will learn terminal commands by creating a websit
 > [!NOTE]
 > echo, pwd, ls, cd, more, clear, mkdir, touch, cp, rm, mv, find, rmdir, flags (--help, --all, -r, etc.).
 
-This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-bash-by-building-a-boilerplate/build-a-boilerplate).
+This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-bash-by-building-a-boilerplate/build-a-boilerplate)
 
 1. __The first thing you need to do is start the terminal.__ Do that the short way by pressing `ctrl+shift+\`\` , or the long way by clicking the _hamburger_ menu at the top left of the screen, going to the _terminal_ section, and clicking _new terminal_. Once you open a new one, type `echo hello terminal` into the terminal and press enter.
 
