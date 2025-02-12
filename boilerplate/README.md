@@ -2,7 +2,9 @@
 
 ## Boilerplate
 
-In this 170-lesson course, you will learn terminal commands by creating a website boilerplate using only the command line. Checkpoints: echo, pwd, ls, cd, more, clear, mkdir, touch, cp, rm, mv, find, rmdir, flags (--help, --all, -r, etc.).
+In this 170-lesson course, you will learn terminal commands by creating a website boilerplate using only the command line. 
+> [!CHECKPOINTS]
+> echo, pwd, ls, cd, more, clear, mkdir, touch, cp, rm, mv, find, rmdir, flags (--help, --all, -r, etc.).
 
 This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-bash-by-building-a-boilerplate/build-a-boilerplate).
 
