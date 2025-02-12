@@ -383,7 +383,7 @@ var bind = require('function-bind');
 module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 ```
 
-29. It's some JavaScript 😄 I think you've fooled around enough. Why don't you navigate out of here. Change back to the has directory.
+29. It's some JavaScript 😄 I think you've fooled around enough. Why don't you navigate out of here. Change back to the `has` directory.
 
 ```bash
 camper: /src$ cd ..
@@ -607,8 +607,7 @@ camper: /website$ ls -a
 .  ..  .gitignore  index.html  index.js  styles.css
 ```
 
-47. 
-There's the hidden file. Do you see it? It didn't display before. It also includes `.` and `...` You used `cd ..` to go back a folder earlier. Change to the `.` directory.
+47. There's the hidden file. Do you see it? It didn't display before. It also includes `.` and `...` You used `cd ..` to go back a folder earlier. Change to the `.` directory.
 
 ```bash
 camper: /website$ cd .
@@ -643,14 +642,14 @@ camper: /website$ ls
 background.jpg  footer.jpeg  header.png  index.html  index.js  styles.css
 ```
 
-52. Looks like images show up in pink. There's also three fonts to use for the website. The first one is "roboto". Create `roboto.font` in the `website` folder.
+52. Looks like images show up in pink. There's also three fonts to use for the website. The first one is _roboto_. Create `roboto.font` in the `website` folder.
 
 ```bash
 camper: /website$ touch roboto.font
 camper: /website$ 
 ```
 
-53. The next one is "lato". Create `lato.font` in the `website` folder.
+53. The next one is _lato_. Create `lato.font` in the `website` folder.
 
 ```bash
 camper: /website$ touch lato.font
@@ -816,7 +815,7 @@ camper: /website$ ls
 CodeAlly.svg  CodeRoad.svg  freeCodeCamp.svg  images  index.html  index.js  lato.font  menlo.font  roboto.font  styles.css
 ```
 
-78. Looks like they're all deleted. There was a mistake with the extensions for the font files. You can rename them with mv like this: `mv <filename> <new_filename>`. mv stands for __move__, it can __rename__ or move something. Rename `roboto.font` to `roboto.woff`.
+78. Looks like they're all deleted. There was a mistake with the extensions for the font files. You can __rename__ them with `mv` like this: `mv <filename> <new_filename>`. mv stands for __move__, it can __rename__ or move something. Rename `roboto.font` to `roboto.woff`.
 
 ```bash
 camper: /website$ mv roboto.font roboto.woff
@@ -1523,4 +1522,35 @@ Yay!
 ```bash
 camper: /website$ echo I made this boilerplate >> README.md 
 camper: /website$ 
+```
+
+150. Use `more` to view your `README.md` file.
+
+```bash
+camper: /website$ more README.md 
+I made this boilerplate
+```
+
+151. Now that line is in the file. Add `from the command line` to your `README.md` file with the `echo` command and the same method.
+
+152. Use `more` to view the "readme" file again.
+
+```bash
+camper: /website$ more README.md 
+I made this boilerplate
+from the command line
+```
+
+153. Now the file has two lines. Add `for the freeCodeCamp bash lessons` to your _readme_ file with the `echo` command like you did before.
+
+154. View your _readme_ file again like you did before.
+
+155. 😄 Change to the project folder.
+
+156. You are back where you started. List what's here.
+
+157. Still the same items. Rename the `website` folder to `website-boilerplate`.
+
+```bash
+camper: /project$ mv website/ website-boilerplate/
 ```
