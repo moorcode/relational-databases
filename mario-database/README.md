@@ -8,7 +8,7 @@
 >This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-relational-databases-by-building-a-mario-database/build-a-mario-database).
 >
 > __Checkpoints:__ 
-> \l, CREATE DATABASE, \c, \db, CREATE TABLE
+> \l, CREATE, \c, \db, \d, ALTER, ADD, DROP
 
 1. The first thing you need to do is start the terminal. Do that by clicking the _hamburger_ menu at the top left of the screen, going to the "terminal" section, and clicking _new terminal_. Once you open a new one, type `echo hello PostgreSQL` into the terminal and press enter.
 
@@ -139,7 +139,7 @@ second_database=>                List of relations
 second_database=> 
 ```
 
-10. You can __view more details__ about a table by adding the table name after the display command like this: `\d table_name`. View more details about your `second_table`.
+10. You can __view more details__ about a table by adding the table name after the __display__ command like this: `\d table_name`. View more details about your `second_table`.
 
 ```bash
 second_database=> \d second_table 
@@ -153,7 +153,7 @@ second_database=>            Table "public.second_table"
 second_database=> 
 ```
 
-11. Tables need __columns__ to describe the data in them, yours doesn't have any yet. Here's an example of how to add one: `ALTER TABLE table_name ADD COLUMN column_name DATATYPE;`. Add a column to `second_table` named `first_column`. Give it a data type of `INT`. `INT` stands for __integer__. Don't forget the semi-colon. 😄
+11. Tables need __columns__ to describe the data in them, yours doesn't have any yet. Here's an example of how to add one: `ALTER TABLE table_name ADD COLUMN column_name DATATYPE;`. __Add a column__ to `second_table` named `first_column`. Give it a __data type__ of `INT`. `INT` stands for __integer__. Don't forget the semi-colon. 😄
 
 ```bash
 second_database=> ALTER TABLE second_table ADD COLUMN first_column INT;
@@ -176,42 +176,79 @@ second_database=>
 ```
 
 13. Your column is there 😄 Use `ALTER TABLE` and `ADD COLUMN` to add another column to `second_table` named `id` that's a type of `INT`.
+> [!TIP]
+> Press _up arrow_ to cycle through previous commands
 
 ```bash
-
+second_database=> ALTER TABLE second_table ADD COLUMN id INT;
+ALTER TABLE
+second_database=>
 ```
 
-14. 
+14. Your table should have an `id` column added. View the details of `second_table` to make sure.
 
 ```bash
+second_database=> \d second_table
+second_database=>                 Table "public.second_table"
++--------------+---------+-----------+----------+---------+
+|    Column    |  Type   | Collation | Nullable | Default |
++--------------+---------+-----------+----------+---------+
+| first_column | integer |           |          |         |
+| id           | integer |           |          |         |
++--------------+---------+-----------+----------+---------+
 
+
+second_database=> 
 ```
 
-15. 
+15. Add another column to `second_table` named `age`. Give it a data type of `INT`.
 
 ```bash
-
+second_database=> ALTER TABLE second_table ADD COLUMN age INT;
+ALTER TABLE
+second_database=> 
 ```
 
-16. 
+16. Take a look at the details of `second_table` again.
 
 ```bash
+second_database=> \d second_table
+                Table "public.second_table"
++--------------+---------+-----------+----------+---------+
+|    Column    |  Type   | Collation | Nullable | Default |
++--------------+---------+-----------+----------+---------+
+| first_column | integer |           |          |         |
+| id           | integer |           |          |         |
+| age          | integer |           |          |         |
++--------------+---------+-----------+----------+---------+
 
+second_database=> 
 ```
-
-17. 
+-
+17. Those are some good looking columns. You will probably need to know how to __remove__ them. Here's an example: `ALTER TABLE table_name DROP COLUMN column_name;`. __Drop__ your `age` column.
 
 ```bash
-
+second_database=> ALTER TABLE second_table DROP COLUMN age;
+ALTER TABLE
+second_database=> 
 ```
 
-18. 
+18. View the details of `second_table` to see if it's gone.
 
 ```bash
+second_database=> \d second_table
+                Table "public.second_table"
++--------------+---------+-----------+----------+---------+
+|    Column    |  Type   | Collation | Nullable | Default |
++--------------+---------+-----------+----------+---------+
+| first_column | integer |           |          |         |
+| id           | integer |           |          |         |
++--------------+---------+-----------+----------+---------+
 
+second_database=> 
 ```
 
-19. 
+19. It's gone. Use the `ALTER TABLE` and `DROP COLUMN` keywords again to drop `first_column`.
 
 ```bash
 
