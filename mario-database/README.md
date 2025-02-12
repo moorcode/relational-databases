@@ -2,9 +2,13 @@
 
 ## Mario Database
 
-In this 165-lesson course, you will learn the basics of a relational database by creating a PostgreSQL database filled with video game characters.
-
-This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-relational-databases-by-building-a-mario-database/build-a-mario-database).
+> [!NOTE]
+> In this 165-lesson course, you will learn the basics of a relational database by creating a PostgreSQL database filled with video game characters.
+>
+>This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-relational-databases-by-building-a-mario-database/build-a-mario-database).
+>
+> __Checkpoints:__
+> 
 
 1. The first thing you need to do is start the terminal. Do that by clicking the "hamburger" menu at the top left of the screen, going to the "terminal" section, and clicking "new terminal". Once you open a new one, type echo hello PostgreSQL into the terminal and press enter.
 
