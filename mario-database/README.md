@@ -251,10 +251,99 @@ second_database=>
 19. It's gone. Use the `ALTER TABLE` and `DROP COLUMN` keywords again to drop `first_column`.
 
 ```bash
+second_database=> ALTER TABLE second_table DROP COLUMN first_column ;
+ALTER TABLE
+second_database=> 
+```
+
+20. A common data type is `VARCHAR`. It's a short string of characters. You need to give it a maximum length when using it like this: `VARCHAR(30)`.
+
+Add a new column to `second_table`, give it a name of name and a data type of `VARCHAR(30)`.
+
+```bash
+second_database=> ALTER TABLE second_table ADD COLUMN name VARCHAR(30);
+ALTER TABLE
+second_database=> 
+```
+
+21. Take a look at the details of `second_table` to see your columns.
+
+```bash
+second_database=> \d second_table
+second_database=>                     Table "public.second_table"
++--------+-----------------------+-----------+----------+---------+
+| Column |         Type          | Collation | Nullable | Default |
++--------+-----------------------+-----------+----------+---------+
+| id     | integer               |           |          |         |
+| name   | character varying(30) |           |          |         |
++--------+-----------------------+-----------+----------+---------+
+
+
+second_database=> 
+```
+
+22. You can see the `VARCHAR` type there. The `30` means the data in it can be a max of 30 characters. You named that column `name`, it should have been `username`. Here's how you can __rename__ a column: `ALTER TABLE table_name RENAME COLUMN column_name TO new_name;`. __Rename__ the `name` column to `username`.
+
+```bash
+second_database=> ALTER TABLE second_table RENAME COLUMN name TO username;
+ALTER TABLE
+second_database=> 
+```
+
+23. Take a look at the details of `second_table` again to see if it got renamed.
+
+```bash
+second_database=> \d second_table
+                     Table "public.second_table"
++----------+-----------------------+-----------+----------+---------+
+|  Column  |         Type          | Collation | Nullable | Default |
++----------+-----------------------+-----------+----------+---------+
+| id       | integer               |           |          |         |
+| username | character varying(30) |           |          |         |
++----------+-----------------------+-----------+----------+---------+
+
+second_database=> 
+```
+
+24. It worked. __Rows__ are the actual data in the table. You can add one like this: `INSERT INTO table_name(column_1, column_2) VALUES(value1, value2);`. __Insert a row__ into `second_table`. Give it an `id` of `1`, and a `username` of `Samus`. The `username` column expects a `VARCHAR`, so you need to put Samus in single quotes like this: `'Samus'`.
+
+```bash
+second_database=> INSERT INTO second_table(id, username) VALUES (1, 'Samus');
+INSERT 0 1
+second_database=> 
+```
+
+25. 
+
+```bash
 
 ```
 
-20. 
+26. 
+
+```bash
+
+```
+
+27. 
+
+```bash
+
+```
+
+28. 
+
+```bash
+
+```
+
+29. 
+
+```bash
+
+```
+
+30. 
 
 ```bash
 
