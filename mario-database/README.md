@@ -313,38 +313,68 @@ INSERT 0 1
 second_database=> 
 ```
 
-25. 
+25. You should have one row in your table. You can __view__ the data in a table by __querying__ it with the `SELECT` statement. Here's how it looks: `SELECT columns FROM table_name;`. Use a `SELECT` statement to __view__ all the columns in `second_table`. Use an asterisk (`*`) to denote that you want to see all the columns.
 
 ```bash
+second_database=> SELECT * FROM second_table;
+         
++----+----------+
+| id | username |
++----+----------+
+|  1 | Samus    |
++----+----------+
+(1 row)
 
+second_database=> 
 ```
 
-26. 
+26. There's your one row. Insert another row into `second_table`. Fill in the `id` and `username` columns with the values `2` and `'Mario'`.
 
 ```bash
-
+second_database=> INSERT INTO second_table(id, username) VALUES(2, 'Mario');
+INSERT 0 1
+second_database=> 
 ```
 
-27. 
+27. You should now have two rows in the table. Use SELECT again to view all the columns and rows from second_table.
 
 ```bash
+second_database=> SELECT * FROM second_table;
+         
++----+----------+
+| id | username |
++----+----------+
+|  1 | Samus    |
+|  2 | Mario    |
++----+----------+
+(2 rows)
 
+second_database=> 
 ```
 
-28. 
+28. Insert another row into `second_table`. Use `3` as the `id`, and `Luigi` as the `username` this time.
+
+29. You should now have three rows. Use SELECT again to see all the data you entered.
 
 ```bash
+second_database=> SELECT * FROM second_table;
+         
++----+----------+
+| id | username |
++----+----------+
+|  1 | Samus    |
+|  2 | Mario    |
+|  3 | Luigi    |
++----+----------+
+(3 rows)
 
+second_database=> 
 ```
 
-29. 
+30. That gives me an idea 😃 You can make a database of Mario video game characters. You should start from scratch for it. Why don't you __delete__ the record you just entered. Here's an example of how to __delete__ a row: `DELETE FROM table_name WHERE condition;`. __Remove__ `Luigi` from your table. The condition you want to use is `username='Luigi'`.
 
 ```bash
-
-```
-
-30. 
-
-```bash
-
+second_database=> DELETE FROM second_table WHERE username = 'Luigi';
+DELETE 1
+second_database=> 
 ```
