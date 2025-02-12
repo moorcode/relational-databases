@@ -1554,3 +1554,25 @@ from the command line
 ```bash
 camper: /project$ mv website/ website-boilerplate/
 ```
+
+158. List the contents of this folder to see the new name.
+
+159. Thanks for making this. You need to make a copy of it. Take a look at the _help_ menu of the _copy_ command.
+
+160. Scroll up to find that _recursive_ flag. You need to use it again to copy the whole folder. Copy the whole boilerplate into a folder named `toms-website`.
+
+```bash
+camper: /project$ cp -r website-boilerplate/ toms-website/
+```
+
+161. List the contents of the project folder to see the new copy.
+
+161. Thanks. Use `find` to view the tree of toms-website.
+
+162. Use `find` to view the tree of the boilerplate folder to make sure it matches.
+
+163. Awesome! You are finished for now. Clear the terminal one last time.
+
+164. Print _goodbye terminal_ to the terminal.
+
+165. Use the __exit__ command to exit the terminal.
