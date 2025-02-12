@@ -22,8 +22,9 @@ Type "help" for help.
 postgres=> 
 ```
 
-3. Notice that the prompt changed to let you know that you are now interacting with PostgreSQL. First thing to do is see what databases are here. Type `\l` into the prompt to list them.
+3. Notice that the prompt changed to let you know that you are now interacting with PostgreSQL. First thing to do is see what databases are here. Type `\l` into the prompt to __list__ them.
 
+```bash
 postgres=> \l
                                List of databases
 +-----------+----------+----------+---------+---------+-----------------------+
@@ -36,3 +37,38 @@ postgres=> \l
 |           |          |          |         |         | postgres=CTc/postgres |
 +-----------+----------+----------+---------+---------+-----------------------+
 (3 rows)
+postgres=> 
+```
+
+4. The databases you see are there by default. You can make your own like this:
+```bash
+CREATE DATABASE database_name;
+```
+The capitalized words are keywords telling PostgreSQL what to do. The name of the database is the lowercase word. Note that all commands need a semi-colon at the end. Create a new database named `first_database`.
+
+```bash
+postgres=> CREATE DATABASE first_database;
+CREATE DATABASE
+postgres=> 
+```
+
+5. Use the list shortcut command again to make sure your new database is there.
+
+6. It worked. Your new database is there. If you don't get a message after entering a command, it means it's incomplete and you likely forgot the semi-colon. You can just add it on the next line and press enter to finish the command. Create another database named `second_database`.
+
+```bash
+postgres=>                                     List of databases
++-----------------+--------------+----------+---------+---------+-----------------------+
+|      Name       |    Owner     | Encoding | Collate |  Ctype  |   Access privileges   |
++-----------------+--------------+----------+---------+---------+-----------------------+
+| first_database  | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| postgres        | postgres     | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| second_database | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| template0       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                 |              |          |         |         | postgres=CTc/postgres |
+| template1       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                 |              |          |         |         | postgres=CTc/postgres |
++-----------------+--------------+----------+---------+---------+-----------------------+
+(5 rows)
+
+```
