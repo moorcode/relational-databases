@@ -35,8 +35,8 @@ freeCodeCamp
 
 4. The output is showing everything in this folder. There's one folder in here. You can use `cd <folder_name>` to go into a folder. `cd` stands for __change directory__. Change to the `freeCodeCamp` directory.
 	
-    > [!TIP]
-    > `Tab`will complete the folder name.
+> [!TIP]
+> `Tab`will complete the folder name.
 
 ```bash
 camper: /project$ cd freeCodeCamp/
