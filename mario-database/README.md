@@ -8,7 +8,7 @@
 >This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-relational-databases-by-building-a-mario-database/build-a-mario-database).
 >
 > __Checkpoints:__ 
-> \l, \c, \db
+> \l, CREATE DATABASE, \c, \db
 
 1. The first thing you need to do is start the terminal. Do that by clicking the _hamburger_ menu at the top left of the screen, going to the "terminal" section, and clicking _new terminal_. Once you open a new one, type `echo hello PostgreSQL` into the terminal and press enter.
 
@@ -44,7 +44,7 @@ postgres=> \l
 postgres=> 
 ```
 
-4. The databases you see are there by default. You can make your own with `CREATE DATABASE database_name;`. The capitalized words are keywords telling PostgreSQL what to do. The name of the database is the lowercase word. Note that all commands need a semi-colon at the end. Create a new database named `first_database`.
+4. The databases you see are there by default. You can make your own with `CREATE DATABASE database_name;`. The capitalized words are keywords telling PostgreSQL what to do. The name of the database is the lowercase word. Note that all commands need a semi-colon at the end. __Create a database__ named `first_database`.
 
 ```bash
 postgres=> CREATE DATABASE first_database;
@@ -73,7 +73,7 @@ postgres=>                                     List of databases
 
 ```
 
-7. You can connect to a database by entering `\c database_name`. You need to connect to add information. Connect to your `second_database`.
+7. You can __connect__ to a database by entering `\c database_name`. You need to __connect__ to add information. __Connect__ to your `second_database`.
 
 ```bash
 postgres=> \c second_database 
@@ -82,7 +82,13 @@ You are now connected to database "second_database" as user "freecodecamp".
 second_database=> 
 ```
 
-8. You should see a message that you are connected. Notice that the prompt changed to `second_database=>`. So the `postgres=>` prompt before must have meant you were connected to that database. A database is made of tables that hold your data. Enter `\d` to display the tables.
+8. You should see a message that you are connected. Notice that the prompt changed to `second_database=>`. So the `postgres=>` prompt before must have meant you were connected to that database. A database is made of tables that hold your data. Enter `\d` to __display__ the tables.
 
+```bash
+second_database=> \d
+Did not find any relations.
+second_database=> 
+```
 
+6. Looks like there're no tables or relations yet. Similar to how you created a database, you can __create a table__ with `CREATE TABLE table_name();`. Note that the parenthesis are needed for this one. It will create the table in the database you are connected to. Create a table named first_table in second_database.
 
