@@ -98,44 +98,84 @@ CREATE TABLE
 second_database=> 
 ```
 
-7. 
+7. View the tables in `second_database` again with the display command. You should see your new table there with a little meta data about it.
 
 ```bash
+second_database=> \d
+second_database=>                List of relations
++--------+-------------+-------+--------------+
+| Schema |    Name     | Type  |    Owner     |
++--------+-------------+-------+--------------+
+| public | first_table | table | freecodecamp |
++--------+-------------+-------+--------------+
+(1 row)
 
+
+second_database=> 
 ```
 
-
-8. 
+8. Create another new table in this database. Give it a name of `second_table`.
 
 ```bash
-
+second_database=> CREATE TABLE second_table();
+CREATE TABLE
+second_database=> 
 ```
 
-9. 
+9. There should be two tables in this database now. Display them again to make sure.
 
 ```bash
+second_database=> \d
+second_database=>                List of relations
++--------+--------------+-------+--------------+
+| Schema |     Name     | Type  |    Owner     |
++--------+--------------+-------+--------------+
+| public | first_table  | table | freecodecamp |
+| public | second_table | table | freecodecamp |
++--------+--------------+-------+--------------+
+(2 rows)
 
+
+second_database=> 
 ```
 
-10. 
+10. You can __view more details__ about a table by adding the table name after the display command like this: `\d table_name`. View more details about your `second_table`.
 
 ```bash
+second_database=> \d second_table 
+second_database=>            Table "public.second_table"
++--------+------+-----------+----------+---------+
+| Column | Type | Collation | Nullable | Default |
++--------+------+-----------+----------+---------+
++--------+------+-----------+----------+---------+
 
+
+second_database=> 
 ```
 
-11. 
+11. Tables need __columns__ to describe the data in them, yours doesn't have any yet. Here's an example of how to add one: `ALTER TABLE table_name ADD COLUMN column_name DATATYPE;`. Add a column to `second_table` named `first_column`. Give it a data type of `INT`. `INT` stands for __integer__. Don't forget the semi-colon. 😄
 
 ```bash
-
+second_database=> ALTER TABLE second_table ADD COLUMN first_column INT;
+ALTER TABLE
+second_database=> 
 ```
 
-12. 
+12. Looks like it worked. Display the details of `second_table` again to see if your new column is there.
 
 ```bash
+second_database=> \d second_table
+                Table "public.second_table"
++--------------+---------+-----------+----------+---------+
+|    Column    |  Type   | Collation | Nullable | Default |
++--------------+---------+-----------+----------+---------+
+| first_column | integer |           |          |         |
++--------------+---------+-----------+----------+---------+
 
+second_database=> 
 ```
 
-13. 
+13. Your column is there 😄 Use `ALTER TABLE` and `ADD COLUMN` to add another column to `second_table` named `id` that's a type of `INT`.
 
 ```bash
 
