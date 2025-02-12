@@ -40,11 +40,7 @@ postgres=> \l
 postgres=> 
 ```
 
-4. The databases you see are there by default. You can make your own like this:
-```bash
-CREATE DATABASE database_name;
-```
-The capitalized words are keywords telling PostgreSQL what to do. The name of the database is the lowercase word. Note that all commands need a semi-colon at the end. Create a new database named `first_database`.
+4. The databases you see are there by default. You can make your own with `CREATE DATABASE database_name;`. The capitalized words are keywords telling PostgreSQL what to do. The name of the database is the lowercase word. Note that all commands need a semi-colon at the end. Create a new database named `first_database`.
 
 ```bash
 postgres=> CREATE DATABASE first_database;
@@ -72,3 +68,17 @@ postgres=>                                     List of databases
 (5 rows)
 
 ```
+
+7. You can connect to a database by entering `\c database_name`. You need to connect to add information. Connect to your `second_database`.
+
+```bash
+postgres=> \c second_database 
+SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
+You are now connected to database "second_database" as user "freecodecamp".
+second_database=> 
+```
+
+8. You should see a message that you are connected. Notice that the prompt changed to `second_database=>`. So the `postgres=>` prompt before must have meant you were connected to that database. A database is made of tables that hold your data. Enter `\d` to display the tables.
+
+
+
