@@ -378,3 +378,127 @@ second_database=> DELETE FROM second_table WHERE username = 'Luigi';
 DELETE 1
 second_database=> 
 ```
+
+31. Luigi should be gone. Use `SELECT` again to see all the data and make sure he's not there.
+
+```bash
+second_database=> SELECT * FROM second_table;
+         
++----+----------+
+| id | username |
++----+----------+
+|  1 | Samus    |
+|  2 | Mario    |
++----+----------+
+(2 rows)
+
+second_database=> 
+```
+
+32. It's gone. You can scrap all this for the new database. Delete Mario from `second_table` using the same command as before, except make the condition `username='Mario'` this time.
+
+33. Only one more row should remain. Delete Samus from `second_table`.
+
+34. Use `SELECT` again to see all the rows in second_table to make sure they're gone.
+
+```bash
+second_database=> SELECT * FROM second_table;
+
+second_database=>          
++----+----------+
+| id | username |
++----+----------+
++----+----------+
+(0 rows)
+
+second_database=> 
+```
+
+35. Looks like they're all gone. Remind yourself what columns you have in `second_table` by looking at its details.
+
+36. There's two columns. You won't need either of them for the Mario database. Alter the table `second_table` and drop the column `username`.
+
+```bash
+second_database=> ALTER TABLE second_table DROP COLUMN username;
+second_database=> ALTER TABLE
+
+second_database=> 
+```
+
+37. 
+
+```bash
+
+```
+
+38. 
+
+```bash
+
+```
+
+39. 
+
+```bash
+
+```
+
+40. 
+
+```bash
+
+```
+
+41. 
+
+```bash
+
+```
+
+42. 
+
+```bash
+
+```
+
+43. 
+
+```bash
+
+```
+
+44. 
+
+```bash
+
+```
+
+45. 
+
+```bash
+
+```
+
+46. 
+
+```bash
+
+```
+
+47. 
+
+```bash
+
+```
+
+48. 
+
+```bash
+
+```
+
+49. 
+
+```bash
+
+```
