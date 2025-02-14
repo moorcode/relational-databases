@@ -425,34 +425,51 @@ second_database=> ALTER TABLE
 second_database=> 
 ```
 
-37. 
+37. Next, drop the `id` column.
+
+38. Okay, the table has no rows or columns left. View the tables in this database to see what is here.
 
 ```bash
+second_database=> \d
+second_database=>                List of relations
++--------+--------------+-------+--------------+
+| Schema |     Name     | Type  |    Owner     |
++--------+--------------+-------+--------------+
+| public | first_table  | table | freecodecamp |
+| public | second_table | table | freecodecamp |
++--------+--------------+-------+--------------+
+(2 rows)
 
+
+second_database=> 
 ```
 
-38. 
+39. Still two. You won't need either of those for the new database either. __Drop__ `second_table` from your database. Here's an example: `DROP TABLE table_name;`.
 
 ```bash
-
+second_database=> DROP TABLE second_table;
+DROP TABLE
+second_database=> 
 ```
 
-39. 
+40. Next, drop `first_table` from the database.
+
+41. All the tables are gone now, too. View all the databases using the command to list them.
 
 ```bash
-
-```
-
-40. 
-
-```bash
-
-```
-
-41. 
-
-```bash
-
+second_database=> \l
+second_database=>                                     List of databases
++-----------------+--------------+----------+---------+---------+-----------------------+
+|      Name       |    Owner     | Encoding | Collate |  Ctype  |   Access privileges   |
++-----------------+--------------+----------+---------+---------+-----------------------+
+| postgres        | postgres     | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| second_database | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| template0       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                 |              |          |         |         | postgres=CTc/postgres |
+| template1       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                 |              |          |         |         | postgres=CTc/postgres |
++-----------------+--------------+----------+---------+---------+-----------------------+
+(4 rows)
 ```
 
 42. 
