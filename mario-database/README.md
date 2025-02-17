@@ -566,41 +566,56 @@ ALTER TABLE
 mario_database=> 
 ```
 
-50. 
+50. The `SERIAL` type will make your column an `INT` with a `NOT NULL` constraint, and automatically increment the integer when a new row is added. View the details of the `characters` table to see what `SERIAL` did for you.
 
 ```bash
+mario_database=> \d characters
+mario_database=>                                      Table "public.characters"
++--------------+---------+-----------+----------+--------------------------------------------------+
+|    Column    |  Type   | Collation | Nullable |                     Default                      |
++--------------+---------+-----------+----------+--------------------------------------------------+
+| character_id | integer |           | not null | nextval('characters_character_id_seq'::regclass) |
++--------------+---------+-----------+----------+--------------------------------------------------+
 
+
+mario_database=> 
 ```
 
-
-51. 
+51. Add a column to `characters` called `name`. Give it a data type of `VARCHAR(30)`, and a constraint of `NOT NULL`. Add a constraint by putting it right after the data type.
 
 ```bash
-
+mario_database=> ALTER TABLE characters ADD COLUMN name VARCHAR(30) NOT NULL;
+ALTER TABLE
+mario_database=> 
 ```
 
-52. 
+52. You can make another column for where they are from. Add another column named `homeland`. Give it a data type of `VARCHAR` that has a max length of `60`.
+
+53. Add another column named `favorite_color` that has a max length of `30`.
+
+54. You should have four columns in characters. Take a look at the details of it to see how things are going.
 
 ```bash
+mario_database=> \d characters
+                                             Table "public.characters"
++----------------+-----------------------+-----------+----------+--------------------------------------------------+
+|     Column     |         Type          | Collation | Nullable |                     Default                      |
++----------------+-----------------------+-----------+----------+--------------------------------------------------+
+| character_id   | integer               |           | not null | nextval('characters_character_id_seq'::regclass) |
+| name           | character varying(30) |           | not null |                                                  |
+| homeland       | character varying(60) |           |          |                                                  |
+| favorite_color | character varying(30) |           |          |                                                  |
++----------------+-----------------------+-----------+----------+--------------------------------------------------+
 
+mario_database=> 
 ```
 
-53. 
+55. You are ready to start adding some rows. First is Mario. Earlier, you used this command to add a row: `INSERT INTO second_table(id, username) VALUES(1, 'Samus');` The first parenthesis is for the column names, you can put as many columns as you want. The second parenthesis is for the values for those columns. Add a row to your table, give it a `name` of `Mario`, a `homeland` of `Mushroom` Kingdom, and a `favorite_color` of `Red`. Make sure to use single quotes where needed.
 
 ```bash
-
-```
-
-54. 
-
-```bash
-
-```
-
-55. 
-
-```bash
-
+mario_database=> INSERT INTO characters(name , homeland , favorite_color) VALUES('Mario', 'Mushroom Kingdom', 'Red');
+INSERT 0 1
+mario_database=> 
 ```
 
 56. 
