@@ -508,13 +508,19 @@ second_database=>
 44. Connect to your newly named database so you can start adding your characters.
 
 ```bash
-postgres=> \c mario_database 
+second_database=> \c mario_database 
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
 You are now connected to database "mario_database" as user "freecodecamp".
 mario_database=> 
 ```
 
 45. Now that you aren't connected to `second_database`, you can drop it. Use the `DROP DATABASE` keywords to do that. 
+
+```bash
+mario_database=> DROP DATABASE second_database ;
+DROP DATABASE
+mario_database=> 
+```
 
 46. List the databases again to make sure it's gone.
 
