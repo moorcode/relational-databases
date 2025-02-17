@@ -415,7 +415,7 @@ second_database=>
 
 35. Looks like they're all gone. Remind yourself what columns you have in `second_table` by looking at its details.
 
-36. There's two columns. You won't need either of them for the Mario database. Alter the table `second_table` and drop the column `username`.
+36. There're two columns. You won't need either of them for the Mario database. Alter the table `second_table` and drop the column `username`.
 
 ```bash
 second_database=> ALTER TABLE second_table DROP COLUMN username;
@@ -454,6 +454,26 @@ second_database=>
 40. Next, drop `first_table` from the database.
 
 41. All the tables are gone now, too. View all the databases using the command to list them.
+
+```bash
+second_database=> \l
+second_database=>                                     List of databases
++-----------------+--------------+----------+---------+---------+-----------------------+
+|      Name       |    Owner     | Encoding | Collate |  Ctype  |   Access privileges   |
++-----------------+--------------+----------+---------+---------+-----------------------+
+| first_database  | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| postgres        | postgres     | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| second_database | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| template0       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                 |              |          |         |         | postgres=CTc/postgres |
+| template1       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                 |              |          |         |         | postgres=CTc/postgres |
++-----------------+--------------+----------+---------+---------+-----------------------+
+(5 rows)
+
+
+second_database=> 
+```
 
 42. Rename `first_database` to `mario_database`. You can __rename a database__ like this: `ALTER DATABASE database_name RENAME TO new_database_name;`.
 
