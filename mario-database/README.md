@@ -456,50 +456,45 @@ second_database=>
 
 41. All the tables are gone now, too. View all the databases using the command to list them.
 
+42. Rename `first_database` to `mario_database`. You can __rename a database__ like this: `ALTER DATABASE database_name RENAME TO new_database_name;`.
+
 ```bash
-second_database=> \l
-second_database=>                                     List of databases
-+-----------------+--------------+----------+---------+---------+-----------------------+
-|      Name       |    Owner     | Encoding | Collate |  Ctype  |   Access privileges   |
-+-----------------+--------------+----------+---------+---------+-----------------------+
-| postgres        | postgres     | UTF8     | C.UTF-8 | C.UTF-8 |                       |
-| second_database | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
-| template0       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
-|                 |              |          |         |         | postgres=CTc/postgres |
-| template1       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
-|                 |              |          |         |         | postgres=CTc/postgres |
-+-----------------+--------------+----------+---------+---------+-----------------------+
+postgres=> ALTER DATABASE first_database RENAME to mario_database;
+ALTER DATABASE
+postgres=> 
+```
+
+43. List the databases to make sure it got renamed.
+
+44. Connect to your newly named database so you can start adding your characters.
+
+```bash
+postgres=> \c mario_database 
+SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
+You are now connected to database "mario_database" as user "freecodecamp".
+mario_database=> 
+```
+
+45. Now that you aren't connected to `second_database`, you can drop it. Use the `DROP DATABASE` keywords to do that. 
+
+46. List the databases again to make sure it's gone.
+
+```bash
+mario_database=> \l
+                                   List of databases
++----------------+--------------+----------+---------+---------+-----------------------+
+|      Name      |    Owner     | Encoding | Collate |  Ctype  |   Access privileges   |
++----------------+--------------+----------+---------+---------+-----------------------+
+| mario_database | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| postgres       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| template0      | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                |              |          |         |         | postgres=CTc/postgres |
+| template1      | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                |              |          |         |         | postgres=CTc/postgres |
++----------------+--------------+----------+---------+---------+-----------------------+
 (4 rows)
-```
 
-42. 
-
-```bash
-
-```
-
-43. 
-
-```bash
-
-```
-
-44. 
-
-```bash
-
-```
-
-45. 
-
-```bash
-
-```
-
-46. 
-
-```bash
-
+mario_database=> 
 ```
 
 47. 
