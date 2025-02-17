@@ -497,19 +497,23 @@ mario_database=> \l
 mario_database=> 
 ```
 
-47. 
+47. Okay, I think you're ready to get started. I don't think you created any tables here, take a look to make sure.
 
 ```bash
-
+mario_database=> \d
+Did not find any relations.
+mario_database=> 
 ```
 
-48. 
+48. Create a new table named `characters`, it will hold some basic information about Mario characters.
 
 ```bash
-
+mario_database=> CREATE TABLE characters();
+CREATE TABLE
+mario_database=> 
 ```
 
-49. 
+49. Next, you can add some columns to the table. Add a column named `character_id` to your new table that is a type of `SERIAL`. (ALTER TABLE characters ADD COLUMN character_id SERIAL; wont pass in freecodecamp; creates a column of type integer)
 
 ```bash
 
