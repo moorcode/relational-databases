@@ -335,7 +335,7 @@ INSERT 0 1
 second_database=> 
 ```
 
-27. You should now have two rows in the table. Use SELECT again to view all the columns and rows from second_table.
+27. You should now have two rows in the table. Use `SELECT` again to view all the columns and rows from second_table.
 
 ```bash
 second_database=> SELECT * FROM second_table;
@@ -353,7 +353,7 @@ second_database=>
 
 28. Insert another row into `second_table`. Use `3` as the `id`, and `Luigi` as the `username` this time.
 
-29. You should now have three rows. Use SELECT again to see all the data you entered.
+29. You should now have three rows. Use `SELECT` again to see all the data you entered.
 
 ```bash
 second_database=> SELECT * FROM second_table;
