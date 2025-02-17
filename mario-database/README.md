@@ -478,12 +478,32 @@ second_database=>
 42. Rename `first_database` to `mario_database`. You can __rename a database__ like this: `ALTER DATABASE database_name RENAME TO new_database_name;`.
 
 ```bash
-postgres=> ALTER DATABASE first_database RENAME to mario_database;
+second_database=> ALTER DATABASE first_database RENAME TO mario_database;
 ALTER DATABASE
-postgres=> 
+second_database=> 
 ```
 
 43. List the databases to make sure it got renamed.
+
+```bash
+second_database=> \l
+second_database=>                                     List of databases
++-----------------+--------------+----------+---------+---------+-----------------------+
+|      Name       |    Owner     | Encoding | Collate |  Ctype  |   Access privileges   |
++-----------------+--------------+----------+---------+---------+-----------------------+
+| mario_database  | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| postgres        | postgres     | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| second_database | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| template0       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                 |              |          |         |         | postgres=CTc/postgres |
+| template1       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                 |              |          |         |         | postgres=CTc/postgres |
++-----------------+--------------+----------+---------+---------+-----------------------+
+(5 rows)
+
+
+second_database=> 
+```
 
 44. Connect to your newly named database so you can start adding your characters.
 
