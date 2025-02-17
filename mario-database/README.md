@@ -8,7 +8,7 @@
 >This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-relational-databases-by-building-a-mario-database/build-a-mario-database).
 >
 > __Checkpoints:__ 
-> \l, CREATE, \c, \db, \d, ALTER, ADD, DROP, RENAME, INSERT INTO
+> \l, CREATE, \c, \db, \d, ALTER, ADD, DROP, RENAME, INSERT INTO, SELECT
 
 1. The first thing you need to do is start the terminal. Do that by clicking the _hamburger_ menu at the top left of the screen, going to the "terminal" section, and clicking _new terminal_. Once you open a new one, type `echo hello PostgreSQL` into the terminal and press enter.
 
