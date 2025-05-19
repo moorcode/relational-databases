@@ -1,11 +1,11 @@
 # Relational Databases
 
-## Mario Database
+## Videogame Characters
 
 > [!NOTE]
 > In this 165-lesson course, you will learn the basics of a relational database by creating a PostgreSQL database filled with video game characters.
 >
->This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-relational-databases-by-building-a-mario-database/build-a-mario-database).
+>This course runs in a virtual Linux machine using Gitpod. Start the course at [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/learn-relational-databases-by-building-a-database-of-video-game-characters/build-a-database-of-video-game-characters).
 >
 > __Checkpoints:__ 
 > \l, CREATE, \c, \db, \d, ALTER, ADD, DROP, RENAME, INSERT INTO, SELECT, DELETE, WHERE
